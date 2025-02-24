@@ -215,7 +215,7 @@ builder.Services.AddScoped<IILevelTwoAccount, CLSTBLevelTwoAccount>();
 builder.Services.AddScoped<IIBLevelThreeAccount, CLSTBLevelThreeAccount>();
 builder.Services.AddScoped<IILevelForeAccount, CLSTBLevelForeAccount>();
 builder.Services.AddScoped<IIStaff, CLSTBStaff>();
-builder.Services.AddScoped<IIAboutSectionStartShopContent, CLSTBAboutSectionStartShopContent>();
+builder.Services.AddScoped<IIAboutSectionStartShopContent,CLSTBAboutSectionStartShopContent>();
 builder.Services.AddScoped<IIPhotoShopLiftSaide, CLSTBPhotoShopLiftSaide>();
 builder.Services.AddScoped<IIPhotoAddProdact, CLSTBPhotoAddProdact>();
 builder.Services.AddScoped<IICustomerMessage, CLSTBCustomerMessage>();
@@ -223,7 +223,6 @@ builder.Services.AddScoped<IIDeliveryCompanie, CLSTBDeliveryCompanie>();
 builder.Services.AddScoped<IICitie, CLSTBCitie>();
 builder.Services.AddScoped<IIArea, CLSTBArea>();
 builder.Services.AddScoped<IIDeliveryCompanyPricing, CLSTBDeliveryCompanyPricing>();
-builder.Services.AddScoped<IITypeOrder, CLSTBTypeOrder>();
 
 
 // تفعيل الترخيص لـ QuestPDF

@@ -114,27 +114,25 @@ namespace Infarstuructre.ViewModel
         public List<TBViewLevelThreeAccount> ListViewViewLevelThreeAccount { get; set; }
         public TBLevelThreeAccount LevelThreeAccount { get; set; }
         public List<TBViewLevelForeAccount> ListViewLevelForeAccount { get; set; }
-        public TBLevelForeAccount LevelForeAccount { get; set; }
+        public TBLevelForeAccount LevelForeAccount { get; set; }  
         public List<TBStaff> ListStaff { get; set; }
-        public TBStaff Staff { get; set; }
+        public TBStaff Staff { get; set; } 
         public List<TBAboutSectionStartShopContent> ListAboutSectionStartShopContent { get; set; }
-        public TBAboutSectionStartShopContent AboutSectionStartShopContent { get; set; }
+        public TBAboutSectionStartShopContent AboutSectionStartShopContent { get; set; }    
         public List<TBPhotoShopLiftSaide> ListPhotoShopLiftSaide { get; set; }
         public TBPhotoShopLiftSaide PhotoShopLiftSaide { get; set; }
         public List<TBViewPhotoAddProdact> ListViewPhotoAddProdact { get; set; }
         public TBPhotoAddProdact PhotoAddProdact { get; set; }
         public List<TBCustomerMessage> ListCustomerMessage { get; set; }
-        public TBCustomerMessage CustomerMessage { get; set; }
+        public TBCustomerMessage CustomerMessage { get; set; }   
         public List<TBDeliveryCompanie> ListDeliveryCompanie { get; set; }
-        public TBDeliveryCompanie DeliveryCompanie { get; set; }
+        public TBDeliveryCompanie DeliveryCompanie { get; set; } 
         public List<TBCitie> ListCitie { get; set; }
         public TBCitie Citie { get; set; }
         public List<TBViewArea> ListViewArea { get; set; }
-        public TBArea Area { get; set; }
+        public TBArea Area { get; set; }    
         public List<TBViewDeliveryCompanyPricing> ListViewDeliveryCompanyPricing { get; set; }
         public TBDeliveryCompanyPricing DeliveryCompanyPricing { get; set; }
-        public List<TBTypeOrder> ListTypeOrder { get; set; }
-        public TBTypeOrder TypeOrder { get; set; }
 
 
     }

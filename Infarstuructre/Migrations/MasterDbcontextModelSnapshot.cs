@@ -1420,56 +1420,6 @@ namespace Infarstuructre.Migrations
                     b.ToTable("TBMainAccounts");
                 });
 
-            modelBuilder.Entity("Domin.Entity.TBOrderOnline", b =>
-                {
-                    b.Property<int>("IdOrderOnline")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdOrderOnline"));
-
-                    b.Property<bool>("CurrentState")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((1))");
-
-                    b.Property<string>("DataEntry")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateTimeEntry")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("getdate()");
-
-                    b.Property<int>("IdInvose")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdTypeOrder")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nouts")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ReceivingMethod")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("TotalQuantity")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("IdOrderOnline");
-
-                    b.ToTable("TBOrderOnlines");
-                });
-
             modelBuilder.Entity("Domin.Entity.TBOrderProductsFromSupplier", b =>
                 {
                     b.Property<int>("IdOrderProductsFromSupplier")
@@ -2080,48 +2030,6 @@ namespace Infarstuructre.Migrations
                     b.ToTable("TBSuppliers");
                 });
 
-            modelBuilder.Entity("Domin.Entity.TBTypeOrder", b =>
-                {
-                    b.Property<int>("IdTypeOrder")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdTypeOrder"));
-
-                    b.Property<bool>("Active")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((1))");
-
-                    b.Property<bool>("CurrentState")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((1))");
-
-                    b.Property<string>("DataEntry")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateTimeEntry")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("getdate()");
-
-                    b.Property<string>("TypeOrderAr")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("TypeOrderEn")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("IdTypeOrder");
-
-                    b.ToTable("TBTypeOrders");
-                });
-
             modelBuilder.Entity("Domin.Entity.TBUnit", b =>
                 {
                     b.Property<int>("IdUnit")
@@ -2266,7 +2174,7 @@ namespace Infarstuructre.Migrations
                     b.Property<int>("IdDeliveryCompanie")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdDeliveryCompanyPricing")
+                    b.Property<int>("IdViewDeliveryCompanyPricing")
                         .HasColumnType("int");
 
                     b.Property<string>("PhoneNumber")
@@ -2621,90 +2529,6 @@ namespace Infarstuructre.Migrations
                     b.ToTable((string)null);
 
                     b.ToView("ViewLevelTwoAccount", (string)null);
-                });
-
-            modelBuilder.Entity("Domin.Entity.TBViewOrderOnline", b =>
-                {
-                    b.Property<bool>("CurrentState")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("DataEntry")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateInvos")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateTimeEntry")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("IdInvose")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdOrderOnline")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdTypeOrder")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ImageUser")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("InvoiceNumber")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nouts")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("OutstandingBill")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("PaymentMethodAr")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ReceivingMethod")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("TotalQuantity")
-                        .HasColumnType("int");
-
-                    b.Property<string>("TypeOrderAr")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TypeOrderEn")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.ToTable((string)null);
-
-                    b.ToView("ViewOrderOnline", (string)null);
                 });
 
             modelBuilder.Entity("Domin.Entity.TBViewOrderProductsFromSupplier", b =>

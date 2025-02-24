@@ -40,6 +40,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Resource\ResourceWeb.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceWeb.resx</DependentUpon>
+    </Compile>
     <Compile Update="Resource\ResourceWebAr.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -48,9 +53,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="Resource\ResourceWeb.resx">
-      <Generator></Generator>
+      <Generator>ResXFileCodeGenerator</Generator>
       <CustomToolNamespace></CustomToolNamespace>
+      <LastGenOutput>ResourceWeb.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Resource\ResourceWebAr.resx">
       <Generator>ResXFileCodeGenerator</Generator>

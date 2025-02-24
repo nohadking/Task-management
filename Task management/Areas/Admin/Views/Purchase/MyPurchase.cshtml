@@ -425,6 +425,7 @@
                                         <div class="input-blocks">
                                             <label>Order Total Price</label>
                                             <input id="OrderTotalPrice" type="text">
+                                            <input hidden id="OrderTotalPriceTemp" type="text">
                                         </div>
                                     </div>
                                 </div>
@@ -645,6 +646,7 @@
                                         <div class="input-blocks">
                                             <label>Order Total Price</label>
                                             <input id="OrderTotalPriceEdit" type="text">
+                                            <input hidden id="OrderTotalPriceEditTemp" type="text">
                                         </div>
                                     </div>
                                 </div>
@@ -840,10 +842,6 @@
             var productName = $('#productSelect').find("option:selected").text();
             var productId = $('#productSelect').find("option:selected").val();
             var productImg = $('#productSelect').find("option:selected").data("additional");
-
-            console.log("productId: " + productId);
-            console.log("productName: " + productName);
-            console.log("productImg: " + productImg);
 
             var tbl = $('#TBLToAddPurcheas');
             var unitData = @Html.Raw(Json.Serialize(ViewBag.Unit));
@@ -1245,21 +1243,26 @@
                     });
             });
         }
-        $(document).on('input', '.quaitity, .freeQuaitity, .price', function () {
+        $(document).on('input', '.quaitity, .freeQuaitity, .price, .discount, .tax', function () {
 
             const row = $(this).closest('tr');
             // الحصول على القيم
             const quantity = parseFloat(row.find('.quaitity').val()) || 0;       // الكمية
             const freeQuantity = parseFloat(row.find('.freeQuaitity').val()) || 0; // الكمية المجانية
             const price = parseFloat(row.find('.price').val()) || 0;            // السعر الفردي
+            const discount = parseFloat(row.find('.discount').val()) || 0;
+            const tax = parseFloat(row.find('.tax').val()) || 0;
+
+
             // حساب الكمية الإجمالية
             const totalQuantity = quantity + freeQuantity;
             // حساب السعر الإجمالي
-            const totalPrice = quantity * price;
+            const totalPrice = quantity * price - discount + tax;
             // وضع النتائج في الأعمدة المناسبة
             row.find('.totalQty').text(totalQuantity.toFixed(0)); // عرض الكمية الإجمالية كعدد صحيح
-            row.find('.totalPrc').text(totalPrice.toFixed(2));    // عرض السعر الإجمالي مع منزلتين عشريتين
+            row.find('.totalPrc').text(totalPrice.toFixed(4));    // عرض السعر الإجمالي مع منزلتين عشريتين
         });
+
         $(document).on('change', '#TBLToAddPurcheas', function () {
             // متغيرات لتخزين المجموعات
             let totalTax = 0;
@@ -1284,14 +1287,31 @@
                 totalTax += tax;
                 totalPrice += totalRowPrice;
             });
+            var totShipp = $('#OrderTotalShipping').val() ?? 0;
             // تحديث القيم في الحقول أو المتغيرات
-            $('#OrderTotalTax').val(totalTax.toFixed(2));
-            $('#OrderTotalDiscount').val(totalDiscount.toFixed(2));
+            $('#OrderTotalTax').val(totalTax.toFixed(4));
+            $('#OrderTotalDiscount').val(totalDiscount.toFixed(4));
             $('#OrderTotalQTY').val(totalQty.toFixed(0));
-            $('#OrderTotalPrice').val(totalPrice.toFixed(2));
+            $('#OrderTotalPrice').val(totalPrice.toFixed(4) - totShipp);
+            $('#OrderTotalPriceTemp').val(totalPrice.toFixed(4) - totShipp);
         });
 
+        $('#OrderTotalShipping').on('change', function () {
+            var shipping = parseFloat($(this).val()) || 0;
+            var tot = parseFloat($('#OrderTotalPriceTemp').val()) || 0;
+            $('#OrderTotalPrice').val(tot + shipping);
+        });
+
+
+        $('#OrderTotalShippingEdit').on('change', function () {
+            var shipping = parseFloat($(this).val()) || 0;
+            var tot = parseFloat($('#OrderTotalPriceEditTemp').val()) || 0;
+            $('#OrderTotalPriceEdit').val(tot + shipping);
+        });
+
+
         $(document).on('change', '#TBLToAddPurcheasEdit', function () {
+            console.log("ssaa")
             // متغيرات لتخزين المجموعات
             let totalTax = 0;
             let totalDiscount = 0;
@@ -1316,10 +1336,10 @@
                 totalPrice += totalRowPrice;
             });
             // تحديث القيم في الحقول أو المتغيرات
-            $('#OrderTotalTaxEdit').val(totalTax.toFixed(2));
-            $('#OrderTotalDiscountEdit').val(totalDiscount.toFixed(2));
+            $('#OrderTotalTaxEdit').val(totalTax.toFixed(4));
+            $('#OrderTotalDiscountEdit').val(totalDiscount.toFixed(4));
             $('#OrderTotalQTYEdit').val(totalQty.toFixed(0));
-            $('#OrderTotalPriceEdit').val(totalPrice.toFixed(2));
+            $('#OrderTotalPriceEdit').val(totalPrice.toFixed(4));
         });
         function ChangeQTY(amount, btn) {
             var inputElement = btn.closest(".product-quantity").querySelector(".quntity-input");
@@ -1333,11 +1353,15 @@
         }
     </script>
     <script>
-        function deleteRow(button) {
 
+        function deleteRow(button) {
             var row = button.parentNode.parentNode;
-            row.parentNode.removeChild(row);
+            var tbody = row.parentNode;
+
+            tbody.removeChild(row);
+            $(tbody).trigger('change'); 
         }
+
 
 
 
@@ -1483,9 +1507,8 @@
                     $('#OrderTotalQTYEdit').val(data[0].totalQuantity);
                     $('#OrderTotalShippingEdit').val(data[0].shipping);
                     $('#OrderTotalPriceEdit').val(data[0].totalAll);
+                    $('#OrderTotalPriceEditTemp').val(data[0].totalAll);
                     $('#NotesForPurcheasEdit').val(data[0].nouts);
-
-
 
                 })
                 .catch(error => {
@@ -1776,7 +1799,7 @@
 
         /////////////// لبب التعديل
 
-        $(document).on('input', '.quaitityEdit, .freeQuaitityEdit, .priceEdit', function () {
+        $(document).on('input', '.quaitityEdit, .freeQuaitityEdit, .priceEdit, .discountEdit, .taxEdit', function () {
 
             const row = $(this).closest('tr');
 
@@ -1784,15 +1807,17 @@
             const quantity = parseFloat(row.find('.quaitityEdit').val()) || 0;       // الكمية
             const freeQuantity = parseFloat(row.find('.freeQuaitityEdit').val()) || 0; // الكمية المجانية
             const price = parseFloat(row.find('.priceEdit').val()) || 0;            // السعر الفردي
+            const discountEdit = parseFloat(row.find('.discountEdit').val()) || 0;
+            const taxEdit = parseFloat(row.find('.taxEdit').val()) || 0;
 
 
             const totalQuantity = quantity + freeQuantity;
             // حساب السعر الإجمالي
-            const totalPrice = quantity * price;
+            const totalPrice = quantity * price - discountEdit + taxEdit;
 
             // وضع النتائج في الأعمدة المناسبة
             row.find('.totalQtyEdit').text(totalQuantity.toFixed(0)); // عرض الكمية الإجمالية كعدد صحيح
-            row.find('.totalPrcEdit').text(totalPrice.toFixed(2));    // عرض السعر الإجمالي مع منزلتين عشريتين
+            row.find('.totalPrcEdit').text(totalPrice.toFixed(4));    // عرض السعر الإجمالي مع منزلتين عشريتين
         });
 
 
@@ -1829,10 +1854,10 @@
             });
 
             // تحديث القيم في الحقول أو المتغيرات
-            $('#OrderTotalTaxEdit').val(totalTax.toFixed(2));
-            $('#OrderTotalDiscountEdit').val(totalDiscount.toFixed(2));
+            $('#OrderTotalTaxEdit').val(totalTax.toFixed(4));
+            $('#OrderTotalDiscountEdit').val(totalDiscount.toFixed(4));
             $('#OrderTotalQTYEdit').val(totalQty.toFixed(0));
-            $('#OrderTotalPriceEdit').val(totalPrice.toFixed(2));
+            $('#OrderTotalPriceEdit').val(totalPrice.toFixed(4));
         });
 
 

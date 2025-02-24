@@ -78,7 +78,7 @@ namespace Infarstuructre.Data
 
             //*********************************************************
 
-
+               
             builder.Entity<TBViewExpense>(entity =>
             {
                 entity.HasNoKey();
@@ -88,9 +88,9 @@ namespace Infarstuructre.Data
 
             //*********************************************************
 
-            //*********************************************************
+             //*********************************************************
 
-
+               
             builder.Entity<TBViewSupplier>(entity =>
             {
                 entity.HasNoKey();
@@ -101,9 +101,9 @@ namespace Infarstuructre.Data
             //*********************************************************
 
 
-            //*********************************************************
+               //*********************************************************
 
-
+               
             builder.Entity<TBViewClassCard>(entity =>
             {
                 entity.HasNoKey();
@@ -113,9 +113,9 @@ namespace Infarstuructre.Data
 
             //*********************************************************
 
-            //*********************************************************
+                  //*********************************************************
 
-
+               
             builder.Entity<TBViewPurchase>(entity =>
             {
                 entity.HasNoKey();
@@ -126,7 +126,7 @@ namespace Infarstuructre.Data
             //*********************************************************  
             //*********************************************************
 
-
+               
             builder.Entity<TBViewOrderProductsFromSupplier>(entity =>
             {
                 entity.HasNoKey();
@@ -136,9 +136,9 @@ namespace Infarstuructre.Data
 
             //*********************************************************
 
-            //*********************************************************
+              //*********************************************************
 
-
+               
             builder.Entity<TBViewLevelTwoAccount>(entity =>
             {
                 entity.HasNoKey();
@@ -149,9 +149,9 @@ namespace Infarstuructre.Data
             //*********************************************************
 
 
-            //*********************************************************
+                 //*********************************************************
 
-
+               
             builder.Entity<TBViewLevelThreeAccount>(entity =>
             {
                 entity.HasNoKey();
@@ -162,7 +162,7 @@ namespace Infarstuructre.Data
             //*********************************************************      
             //*********************************************************
 
-
+               
             builder.Entity<TBViewLevelForeAccount>(entity =>
             {
                 entity.HasNoKey();
@@ -173,7 +173,7 @@ namespace Infarstuructre.Data
             //*********************************************************      
             //*********************************************************
 
-
+               
             builder.Entity<TBViewPhotoAddProdact>(entity =>
             {
                 entity.HasNoKey();
@@ -184,7 +184,7 @@ namespace Infarstuructre.Data
             //*********************************************************   
             //*********************************************************
 
-
+               
             builder.Entity<TBViewArea>(entity =>
             {
                 entity.HasNoKey();
@@ -195,22 +195,11 @@ namespace Infarstuructre.Data
             //*********************************************************    
             //*********************************************************
 
-
+               
             builder.Entity<TBViewDeliveryCompanyPricing>(entity =>
             {
                 entity.HasNoKey();
                 entity.ToView("ViewDeliveryCompanyPricing");
-            });
-
-
-            //*********************************************************
-            //*********************************************************
-
-
-            builder.Entity<TBViewOrderOnline>(entity =>
-            {
-                entity.HasNoKey();
-                entity.ToView("ViewOrderOnline");
             });
 
 
@@ -359,7 +348,7 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBExpense>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");  
 
             //--------------------------------- 
             //---------------------------------
@@ -368,7 +357,7 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBSupplier>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             builder.Entity<TBSupplier>()
            .Property(b => b.Active)
            .HasDefaultValueSql("((1))");
@@ -388,7 +377,7 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBClassCard>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             builder.Entity<TBClassCard>()
            .Property(b => b.Active)
            .HasDefaultValueSql("((1))");
@@ -400,8 +389,8 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBPurchase>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
-
+           .HasDefaultValueSql("((1))");   
+      
 
             //--------------------------------- 
             //---------------------------------
@@ -410,7 +399,7 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBAccountingRestriction>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //---------------------------------
             //---------------------------------
             builder.Entity<TBBestSellingProductsHomeContent>()
@@ -418,7 +407,7 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBBestSellingProductsHomeContent>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //---------------------------------  
             //---------------------------------
             //---------------------------------
@@ -427,7 +416,7 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBHomeBackgroundimage>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //---------------------------------  
             //---------------------------------
             builder.Entity<TBHomeImageProdact>()
@@ -435,7 +424,7 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBHomeImageProdact>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //---------------------------------   
             //---------------------------------
             builder.Entity<TBOrderProductsFromSupplier>()
@@ -443,7 +432,7 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBOrderProductsFromSupplier>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //---------------------------------  
             //---------------------------------
             builder.Entity<TBMainAccount>()
@@ -451,10 +440,10 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBMainAccount>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");  
             builder.Entity<TBMainAccount>()
            .Property(b => b.Active)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //---------------------------------  
             //---------------------------------
             builder.Entity<TBLevelTwoAccount>()
@@ -462,10 +451,10 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBLevelTwoAccount>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");  
             builder.Entity<TBLevelTwoAccount>()
            .Property(b => b.Active)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //--------------------------------- 
             //---------------------------------
             builder.Entity<TBLevelThreeAccount>()
@@ -473,10 +462,10 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBLevelThreeAccount>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");  
             builder.Entity<TBLevelThreeAccount>()
            .Property(b => b.Active)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //---------------------------------   
             //---------------------------------
             builder.Entity<TBLevelForeAccount>()
@@ -484,10 +473,10 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBLevelForeAccount>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");  
             builder.Entity<TBLevelForeAccount>()
            .Property(b => b.Active)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //---------------------------------   
             //---------------------------------
             builder.Entity<TBStaff>()
@@ -495,10 +484,10 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBStaff>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");  
             builder.Entity<TBStaff>()
            .Property(b => b.Active)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             //---------------------------------    
             //---------------------------------
             builder.Entity<TBAboutSectionStartShopContent>()
@@ -506,8 +495,8 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBAboutSectionStartShopContent>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
-
+           .HasDefaultValueSql("((1))");  
+       
             //---------------------------------   
             //---------------------------------
             builder.Entity<TBPhotoShopLiftSaide>()
@@ -515,8 +504,8 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBPhotoShopLiftSaide>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
-
+           .HasDefaultValueSql("((1))");  
+       
             //---------------------------------  
             //---------------------------------
             builder.Entity<TBPhotoAddProdact>()
@@ -524,8 +513,8 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBPhotoAddProdact>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
-
+           .HasDefaultValueSql("((1))");  
+       
             //---------------------------------   
             //---------------------------------
             builder.Entity<TBCustomerMessage>()
@@ -533,8 +522,8 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBCustomerMessage>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
-
+           .HasDefaultValueSql("((1))");  
+       
             //---------------------------------   
             //---------------------------------
             builder.Entity<TBDeliveryCompanie>()
@@ -542,11 +531,11 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBDeliveryCompanie>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             builder.Entity<TBDeliveryCompanie>()
            .Property(b => b.Active)
-           .HasDefaultValueSql("((1))");
-
+           .HasDefaultValueSql("((1))");  
+       
             //---------------------------------      
             //---------------------------------
             builder.Entity<TBCitie>()
@@ -554,11 +543,11 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBCitie>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             builder.Entity<TBCitie>()
            .Property(b => b.Active)
-           .HasDefaultValueSql("((1))");
-
+           .HasDefaultValueSql("((1))");  
+       
             //---------------------------------    
             //---------------------------------
             builder.Entity<TBArea>()
@@ -566,11 +555,11 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBArea>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
             builder.Entity<TBArea>()
            .Property(b => b.Active)
-           .HasDefaultValueSql("((1))");
-
+           .HasDefaultValueSql("((1))");  
+       
             //---------------------------------     
             //---------------------------------
             builder.Entity<TBDeliveryCompanyPricing>()
@@ -578,30 +567,9 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBDeliveryCompanyPricing>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
-
-
-            //---------------------------------   
-            //---------------------------------
-            builder.Entity<TBTypeOrder>()
-           .Property(b => b.DateTimeEntry)
-           .HasDefaultValueSql("getdate()");
-            builder.Entity<TBTypeOrder>()
-           .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
-            builder.Entity<TBTypeOrder>()
-           .Property(b => b.Active)
-           .HasDefaultValueSql("((1))");
-
-
-            //--------------------------------- 
-            //---------------------------------
-            builder.Entity<TBOrderOnline>()
-           .Property(b => b.DateTimeEntry)
-           .HasDefaultValueSql("getdate()");
-            builder.Entity<TBOrderOnline>()
-           .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");
+           .HasDefaultValueSql("((1))");   
+ 
+       
             //--------------------------------- 
         }
         //***********************************
@@ -659,9 +627,6 @@ namespace Infarstuructre.Data
         public DbSet<TBViewArea> ViewArea { get; set; }
         public DbSet<TBDeliveryCompanyPricing> TBDeliveryCompanyPricings { get; set; }
         public DbSet<TBViewDeliveryCompanyPricing> ViewDeliveryCompanyPricing { get; set; }
-        public DbSet<TBTypeOrder> TBTypeOrders { get; set; }
-        public DbSet<TBOrderOnline> TBOrderOnlines { get; set; }
-        public DbSet<TBViewOrderOnline> ViewOrderOnline { get; set; }
 
 
     }
