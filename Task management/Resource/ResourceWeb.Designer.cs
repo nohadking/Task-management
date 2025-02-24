@@ -169,6 +169,15 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل المدن .
+        /// </summary>
+        internal static string LBAddCitie {
+            get {
+                return ResourceManager.GetString("LBAddCitie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Adding and modifying city data.
         /// </summary>
         internal static string LBAddCity {
@@ -282,6 +291,15 @@ namespace Task_management.Resource {
         internal static string LBAddEditCompanyInformation {
             get {
                 return ResourceManager.GetString("LBAddEditCompanyInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل بيانات شركات التوصيل.
+        /// </summary>
+        internal static string LBAddEditDeliveryCompanieImage {
+            get {
+                return ResourceManager.GetString("LBAddEditDeliveryCompanieImage", resourceCulture);
             }
         }
         
@@ -637,6 +655,15 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to اضافة وتعديل حالة الطلب .
+        /// </summary>
+        internal static string LBAddTypeOrder {
+            get {
+                return ResourceManager.GetString("LBAddTypeOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add and modify company categories.
         /// </summary>
         internal static string LBAddTypesCompanies {
@@ -705,6 +732,15 @@ namespace Task_management.Resource {
         internal static string LbAmount {
             get {
                 return ResourceManager.GetString("LbAmount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to المنطقة.
+        /// </summary>
+        internal static string lbAreaName {
+            get {
+                return ResourceManager.GetString("lbAreaName", resourceCulture);
             }
         }
         
@@ -786,6 +822,15 @@ namespace Task_management.Resource {
         internal static string lbCategoryEn {
             get {
                 return ResourceManager.GetString("lbCategoryEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to المدينة.
+        /// </summary>
+        internal static string lbCitieName {
+            get {
+                return ResourceManager.GetString("lbCitieName", resourceCulture);
             }
         }
         
@@ -1186,6 +1231,24 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to شركة التوصيل.
+        /// </summary>
+        internal static string lbDeliveryCompanie {
+            get {
+                return ResourceManager.GetString("lbDeliveryCompanie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to عنوان شركة التوصيل.
+        /// </summary>
+        internal static string lbDeliveryCompanieAddressr {
+            get {
+                return ResourceManager.GetString("lbDeliveryCompanieAddressr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to الوصف.
         /// </summary>
         internal static string LbDescription {
@@ -1317,6 +1380,24 @@ namespace Task_management.Resource {
         internal static string lbEmailOner {
             get {
                 return ResourceManager.GetString("lbEmailOner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to البريد الاكتروني.
+        /// </summary>
+        internal static string lbEmilCompanie {
+            get {
+                return ResourceManager.GetString("lbEmilCompanie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بريد المدير التنفيذي.
+        /// </summary>
+        internal static string lbEmilOner {
+            get {
+                return ResourceManager.GetString("lbEmilOner", resourceCulture);
             }
         }
         
@@ -1897,7 +1978,7 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Regions.
+        ///   Looks up a localized string similar to المناطق.
         /// </summary>
         internal static string LBMyArea {
             get {
@@ -1938,6 +2019,15 @@ namespace Task_management.Resource {
         internal static string LBMYCategoryServic {
             get {
                 return ResourceManager.GetString("LBMYCategoryServic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to المدن.
+        /// </summary>
+        internal static string LBMyCitie {
+            get {
+                return ResourceManager.GetString("LBMyCitie", resourceCulture);
             }
         }
         
@@ -2046,6 +2136,24 @@ namespace Task_management.Resource {
         internal static string LBMyCustomerMessages {
             get {
                 return ResourceManager.GetString("LBMyCustomerMessages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to بينات شركات التوصيل.
+        /// </summary>
+        internal static string LBMYDeliveryCompanie {
+            get {
+                return ResourceManager.GetString("LBMYDeliveryCompanie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تسعير  المناطق  لشركات التوصيل.
+        /// </summary>
+        internal static string LBMyDeliveryCompanyPricing {
+            get {
+                return ResourceManager.GetString("LBMyDeliveryCompanyPricing", resourceCulture);
             }
         }
         
@@ -2662,6 +2770,24 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to المدير التنفيذي.
+        /// </summary>
+        internal static string lbOnerNamee {
+            get {
+                return ResourceManager.GetString("lbOnerNamee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to هاتف المدير.
+        /// </summary>
+        internal static string lbOnerPhone {
+            get {
+                return ResourceManager.GetString("lbOnerPhone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to العمليات.
         /// </summary>
         internal static string LbOpration {
@@ -2865,6 +2991,15 @@ namespace Task_management.Resource {
         internal static string LbPrice {
             get {
                 return ResourceManager.GetString("LbPrice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to سعر التوصيل.
+        /// </summary>
+        internal static string lbPricing {
+            get {
+                return ResourceManager.GetString("lbPricing", resourceCulture);
             }
         }
         
@@ -3571,6 +3706,24 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to الحالة .
+        /// </summary>
+        internal static string lbTypeOrderAr {
+            get {
+                return ResourceManager.GetString("lbTypeOrderAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to الحالة انكليزي.
+        /// </summary>
+        internal static string lbTypeOrderEn {
+            get {
+                return ResourceManager.GetString("lbTypeOrderEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Category.
         /// </summary>
         internal static string LbTypesCompanies {
@@ -3832,6 +3985,15 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to حالة الطلبات .
+        /// </summary>
+        internal static string TBMyTypeOrder {
+            get {
+                return ResourceManager.GetString("TBMyTypeOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تم إدخال اسم الحساب مسبقا يرجى التأكد وإعادة المحاولة لاحقا...!.
         /// </summary>
         internal static string VLAccountNameDoplceted {
@@ -3846,6 +4008,15 @@ namespace Task_management.Resource {
         internal static string VLAreadoplceted {
             get {
                 return ResourceManager.GetString("VLAreadoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال اسم المنطقة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ..!.
+        /// </summary>
+        internal static string VLAreaNameDoplceted {
+            get {
+                return ResourceManager.GetString("VLAreaNameDoplceted", resourceCulture);
             }
         }
         
@@ -3873,6 +4044,15 @@ namespace Task_management.Resource {
         internal static string VLCategorysEnDoplceted {
             get {
                 return ResourceManager.GetString("VLCategorysEnDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال اسم المدينة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        internal static string VLCitieNameDoplceted {
+            get {
+                return ResourceManager.GetString("VLCitieNameDoplceted", resourceCulture);
             }
         }
         
@@ -4003,6 +4183,33 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج اسم شركة التوصيل لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlDeliveryCompanie {
+            get {
+                return ResourceManager.GetString("VlDeliveryCompanie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال شركة التوصيل مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        internal static string VLDeliveryCompanieDoplceted {
+            get {
+                return ResourceManager.GetString("VLDeliveryCompanieDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم تسعير المنطقة مسبا من قبل شركة التوصيل يرجى التأكد وإعادة المحاولة ...!.
+        /// </summary>
+        internal static string VLDeliveryCompanyPricingNameDoplceted {
+            get {
+                return ResourceManager.GetString("VLDeliveryCompanyPricingNameDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The region has already been entered. Please verify and try again later...!.
         /// </summary>
         internal static string VLDescriptionareadoplceted {
@@ -4071,6 +4278,24 @@ namespace Task_management.Resource {
         internal static string VLEmailOreUserOrPaswo {
             get {
                 return ResourceManager.GetString("VLEmailOreUserOrPaswo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال اميل  شركة التوصيل ممسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        internal static string VLEmilCompanieDoplceted {
+            get {
+                return ResourceManager.GetString("VLEmilCompanieDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال إميل المدير التنفيذي مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        internal static string VLEmilOnerDoplceted {
+            get {
+                return ResourceManager.GetString("VLEmilOnerDoplceted", resourceCulture);
             }
         }
         
@@ -4219,6 +4444,33 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج اسم المدير التنفيذي لشركة التوصيل لتتم العملية بنجاح...!.
+        /// </summary>
+        internal static string VlOnerName {
+            get {
+                return ResourceManager.GetString("VlOnerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال اسم المدير التنفيذي مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        internal static string VLOnerNameDoplceted {
+            get {
+                return ResourceManager.GetString("VLOnerNameDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال هاتف المدير التنفيذي مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        internal static string VLOnerPhoneDoplceted {
+            get {
+                return ResourceManager.GetString("VLOnerPhoneDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to تم إدخال طريقة الدفع باللغة الربية ممسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
         /// </summary>
         internal static string VLPaymentMethodArDoplceted {
@@ -4233,6 +4485,24 @@ namespace Task_management.Resource {
         internal static string VLPaymentMethodEnDoplceted {
             get {
                 return ResourceManager.GetString("VLPaymentMethodEnDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج هاتف شركة التوصيل لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlPhoneNumber {
+            get {
+                return ResourceManager.GetString("VlPhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال هاتف شركة التوصيل مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        internal static string VLPhoneNumberDoplceted {
+            get {
+                return ResourceManager.GetString("VLPhoneNumberDoplceted", resourceCulture);
             }
         }
         
@@ -4368,6 +4638,24 @@ namespace Task_management.Resource {
         internal static string VLTitleShippingoplceted {
             get {
                 return ResourceManager.GetString("VLTitleShippingoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال  حالة الطلب باللغة العربية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        internal static string VLTypeOrderArDoplceted {
+            get {
+                return ResourceManager.GetString("VLTypeOrderArDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إدخال حالة الطلب باللغة الانكليزية يرجى التأكد وإعادة المحاولة لاحقا ....!.
+        /// </summary>
+        internal static string VLTypeOrderEnDoplceted {
+            get {
+                return ResourceManager.GetString("VLTypeOrderEnDoplceted", resourceCulture);
             }
         }
         

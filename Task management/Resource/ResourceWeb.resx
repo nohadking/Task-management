@@ -120,6 +120,15 @@
   <data name="IdFAQDescreption" xml:space="preserve">
     <value>FAQ Descreption</value>
   </data>
+  <data name="lbAccountingName" xml:space="preserve">
+    <value>اسم الحساب</value>
+  </data>
+  <data name="lbAccountName" xml:space="preserve">
+    <value>اسم الحساب</value>
+  </data>
+  <data name="lbAccountNumber" xml:space="preserve">
+    <value>رقم الحساب</value>
+  </data>
   <data name="LbActive" xml:space="preserve">
     <value>حالة الفئة</value>
   </data>
@@ -129,11 +138,23 @@
   <data name="LbActualEnd" xml:space="preserve">
     <value>Actual End</value>
   </data>
+  <data name="LBAddAboutSectionStartHomeContent" xml:space="preserve">
+    <value>أضافة وتعديل قسم عنا في الرئيسية </value>
+  </data>
+  <data name="LBAddAccountingRestriction" xml:space="preserve">
+    <value>إضافة وتعديل القيود المحاسبية </value>
+  </data>
   <data name="LBAddArea" xml:space="preserve">
     <value>Adding and modifying regions</value>
   </data>
   <data name="LBAddAreaDeliveryTariffs" xml:space="preserve">
     <value>Adding and modifying the pricing of delivery companies for the regions</value>
+  </data>
+  <data name="LBAddBestSellingProductsHomeContent" xml:space="preserve">
+    <value>إضافة وتعديل  عناوين الاكثر مبيعا </value>
+  </data>
+  <data name="LBAddCitie" xml:space="preserve">
+    <value>إضافة وتعديل المدن </value>
   </data>
   <data name="LBAddCity" xml:space="preserve">
     <value>Adding and modifying city data</value>
@@ -144,8 +165,17 @@
   <data name="LBAddClintWitheDeliveryTariffs" xml:space="preserve">
     <value>Adding and modifying systems Clint Withe Delivery Tariffs</value>
   </data>
+  <data name="LBAddCompanieTypeWork" xml:space="preserve">
+    <value>Adding and modifying Companie Type Work</value>
+  </data>
   <data name="LBAddCurrenciesExchangeRates" xml:space="preserve">
     <value>Add and modify currencies</value>
+  </data>
+  <data name="LBAddCustomerCategorie" xml:space="preserve">
+    <value>إضافة وتعديل فئات العملاء</value>
+  </data>
+  <data name="LBAddCustomerMessage" xml:space="preserve">
+    <value>إضافة وتعديل رسائل العملاء</value>
   </data>
   <data name="LBAddCustomerMessages" xml:space="preserve">
     <value>Add and modify the Customer Messages</value>
@@ -153,14 +183,56 @@
   <data name="LbAddedBy" xml:space="preserve">
     <value>Added By</value>
   </data>
+  <data name="LBAddEditAboutSectionStartShopContent" xml:space="preserve">
+    <value>إضافة وتعديل  النبذة في المتجر </value>
+  </data>
+  <data name="LBAddEditCategoryServic" xml:space="preserve">
+    <value>إضافة وتعديل فئات الخدمات </value>
+  </data>
+  <data name="LBAddEditClassCard" xml:space="preserve">
+    <value>إضافة وتعديل المواد</value>
+  </data>
+  <data name="LBAddEditCompanyInformation" xml:space="preserve">
+    <value>إضافة  وتعديل  بيانات الشركة </value>
+  </data>
+  <data name="LBAddEditDeliveryCompanieImage" xml:space="preserve">
+    <value>إضافة وتعديل بيانات شركات التوصيل</value>
+  </data>
+  <data name="LBAddEditHomeBackgroundimage" xml:space="preserve">
+    <value>إضافة وتعديل صورة الخلفية بالرئيسية </value>
+  </data>
+  <data name="LBAddEditHomeImageProdact" xml:space="preserve">
+    <value>إضافة وتعديل الصور اسفل المنتجات </value>
+  </data>
   <data name="LbAddEditInformationCompanies" xml:space="preserve">
     <value>Add and modify company data</value>
+  </data>
+  <data name="LBAddEditPhotoAddProdact" xml:space="preserve">
+    <value>إضافة وتعديل صور المنتجات </value>
+  </data>
+  <data name="LBAddEditPhotoHomeSliderContent" xml:space="preserve">
+    <value>اضافة وتعديل  الصور في الهدر </value>
+  </data>
+  <data name="LBAddEditPhotoShopLiftSaide" xml:space="preserve">
+    <value>إضافة وتعديل الصورة الجانبية </value>
+  </data>
+  <data name="LBAddEditRequestsTask" xml:space="preserve">
+    <value>Add and edit task requests</value>
+  </data>
+  <data name="LBAddEditStaff" xml:space="preserve">
+    <value>إضافة وتعديل الموظفين </value>
+  </data>
+  <data name="LBAddEditSupplier" xml:space="preserve">
+    <value>إضافة وتعديل بيانات مورد</value>
   </data>
   <data name="LBAddEmailAlartSetting" xml:space="preserve">
     <value>Adding and modifying Email Alart Setting</value>
   </data>
   <data name="LBAddExchangeRate" xml:space="preserve">
     <value>Add and modify the exchange rate</value>
+  </data>
+  <data name="LBAddExpenseCategory" xml:space="preserve">
+    <value>إضافة وتعديل فئات المصاريف</value>
   </data>
   <data name="LBAddFAQ" xml:space="preserve">
     <value>Add FAQ</value>
@@ -170,6 +242,21 @@
   </data>
   <data name="LBAddFAQList" xml:space="preserve">
     <value>Add FAQ List</value>
+  </data>
+  <data name="LBAddHomeSliderContent" xml:space="preserve">
+    <value>أضافة وتعديل بينات الهيدر في الرئيسية ...!</value>
+  </data>
+  <data name="LBAddLevelForeAccount" xml:space="preserve">
+    <value>إضافة وتعديل  حسابات المستوى الرابع </value>
+  </data>
+  <data name="LBAddLevelThreeAccount" xml:space="preserve">
+    <value>إضافة وتعديل حسابات المستوى الثالث</value>
+  </data>
+  <data name="LBAddLevelTwoAccount" xml:space="preserve">
+    <value>إضافة وتعديل حسابات المستوى الثاني </value>
+  </data>
+  <data name="LBAddMainAccount" xml:space="preserve">
+    <value>إضافة وتعديل الحسابات الرئيسية </value>
   </data>
   <data name="LBAddOrderCase" xml:space="preserve">
     <value>Adding and modifying Order Case</value>
@@ -198,6 +285,15 @@
   <data name="LbAddresCompany" xml:space="preserve">
     <value>Address</value>
   </data>
+  <data name="lbAddress" xml:space="preserve">
+    <value>العنوان </value>
+  </data>
+  <data name="LbAddressAr" xml:space="preserve">
+    <value>العنوان عربي </value>
+  </data>
+  <data name="LbAddressEn" xml:space="preserve">
+    <value>العنوان انكليزي</value>
+  </data>
   <data name="LBAddRolesName" xml:space="preserve">
     <value>Adding and modifying Roles</value>
   </data>
@@ -219,6 +315,9 @@
   <data name="LBAddTransfer" xml:space="preserve">
     <value>Adding and modifying Transfer</value>
   </data>
+  <data name="LBAddTypeOrder" xml:space="preserve">
+    <value>اضافة وتعديل حالة الطلب </value>
+  </data>
   <data name="LBAddTypesCompanies" xml:space="preserve">
     <value>Add and modify company categories</value>
   </data>
@@ -237,11 +336,23 @@
   <data name="LBAddTypeSystemDelivery" xml:space="preserve">
     <value>Adding and modifying Type System Delivery</value>
   </data>
+  <data name="LBAddUnit" xml:space="preserve">
+    <value>إضافة وتعديل الوحدة </value>
+  </data>
   <data name="LbAmount" xml:space="preserve">
     <value>المبلغ</value>
   </data>
+  <data name="lbAreaName" xml:space="preserve">
+    <value>المنطقة</value>
+  </data>
   <data name="Lbbgw" xml:space="preserve">
     <value>bgw</value>
+  </data>
+  <data name="lbBondNumber" xml:space="preserve">
+    <value>رقم السند</value>
+  </data>
+  <data name="lbBondType" xml:space="preserve">
+    <value>نوع السند</value>
   </data>
   <data name="Lbbranch" xml:space="preserve">
     <value>branch</value>
@@ -254,6 +365,15 @@
   </data>
   <data name="LbCatchReceiptNo" xml:space="preserve">
     <value>Catch Receipt No</value>
+  </data>
+  <data name="lbCategoryAr" xml:space="preserve">
+    <value>الفئات عربي</value>
+  </data>
+  <data name="lbCategoryEn" xml:space="preserve">
+    <value>الفئات إنكليزي</value>
+  </data>
+  <data name="lbCitieName" xml:space="preserve">
+    <value>المدينة</value>
   </data>
   <data name="LbCity" xml:space="preserve">
     <value>City</value>
@@ -273,8 +393,17 @@
   <data name="Lbcode" xml:space="preserve">
     <value>code</value>
   </data>
+  <data name="lbCodeItem" xml:space="preserve">
+    <value>كود المادة</value>
+  </data>
   <data name="Lbcodeto" xml:space="preserve">
     <value>code</value>
+  </data>
+  <data name="LbCompanieTypeWorkAr" xml:space="preserve">
+    <value>Companie Type Work Ar</value>
+  </data>
+  <data name="LbCompanieTypeWorkEn" xml:space="preserve">
+    <value>Companie Type Work En</value>
   </data>
   <data name="LbCompanyDelivery" xml:space="preserve">
     <value>Delivery company pricing</value>
@@ -284,6 +413,9 @@
   </data>
   <data name="LbCompanyName" xml:space="preserve">
     <value>Company Name</value>
+  </data>
+  <data name="LbCompanyNameAr" xml:space="preserve">
+    <value>Company Name Ar</value>
   </data>
   <data name="LbCompanyNamem" xml:space="preserve">
     <value>Merchant Company Namem</value>
@@ -312,17 +444,14 @@
   <data name="Lbcredit" xml:space="preserve">
     <value>credit</value>
   </data>
+  <data name="lbcreditor" xml:space="preserve">
+    <value>دائن</value>
+  </data>
   <data name="LbCurrency" xml:space="preserve">
     <value>Currency</value>
   </data>
   <data name="lbCurrentState" xml:space="preserve">
     <value>الحالة</value>
-  </data>
-  <data name="LBCustomeronorder" xml:space="preserve">
-    <value>Customer On Order</value>
-  </data>
-  <data name="LBCustomers" xml:space="preserve">
-    <value>Customers</value>
   </data>
   <data name="Lbcust_landmark" xml:space="preserve">
     <value>Nearest Teacher</value>
@@ -342,17 +471,47 @@
   <data name="Lbcust_status" xml:space="preserve">
     <value>old status</value>
   </data>
+  <data name="lbCustomerCategorieAr" xml:space="preserve">
+    <value>فئة العميل عربي</value>
+  </data>
+  <data name="lbCustomerCategorieEn" xml:space="preserve">
+    <value>فئة العميل انكليزي</value>
+  </data>
+  <data name="LBCustomeronorder" xml:space="preserve">
+    <value>Customer On Order</value>
+  </data>
+  <data name="LBCustomers" xml:space="preserve">
+    <value>Customers</value>
+  </data>
   <data name="LbDataEntry" xml:space="preserve">
     <value>مدخل البيانات </value>
+  </data>
+  <data name="lbDateBond" xml:space="preserve">
+    <value>تاريخ السند</value>
+  </data>
+  <data name="LbDateInvos" xml:space="preserve">
+    <value>تاريخ الفاتورة</value>
   </data>
   <data name="LbDateTimeEntry" xml:space="preserve">
     <value>وقت وتاريخ الادخال</value>
   </data>
-  <data name="LBDeliveryAddress" xml:space="preserve">
-    <value>DeliveryAddress</value>
+  <data name="lbDebtlimit" xml:space="preserve">
+    <value>سقف المديونية</value>
+  </data>
+  <data name="lbDebtor" xml:space="preserve">
+    <value>مدين</value>
   </data>
   <data name="Lbdelivery_charges" xml:space="preserve">
     <value>Delivery Charges</value>
+  </data>
+  <data name="LBDeliveryAddress" xml:space="preserve">
+    <value>DeliveryAddress</value>
+  </data>
+  <data name="lbDeliveryCompanie" xml:space="preserve">
+    <value>شركة التوصيل</value>
+  </data>
+  <data name="lbDeliveryCompanieAddressr" xml:space="preserve">
+    <value>عنوان شركة التوصيل</value>
   </data>
   <data name="LbDescription" xml:space="preserve">
     <value>الوصف</value>
@@ -381,11 +540,41 @@
   <data name="LBEmageSise" xml:space="preserve">
     <value>Image size 150*150</value>
   </data>
+  <data name="LbEmaiContact" xml:space="preserve">
+    <value>Emai Contact</value>
+  </data>
   <data name="LbEmailAlartSetting" xml:space="preserve">
     <value>EmailAlart Setting</value>
   </data>
   <data name="LbEmailCompany" xml:space="preserve">
     <value>البريد الاكتروني</value>
+  </data>
+  <data name="LbEmailMaster" xml:space="preserve">
+    <value>Email Master</value>
+  </data>
+  <data name="LbEmailMessage" xml:space="preserve">
+    <value>البريد المرتبط</value>
+  </data>
+  <data name="lbEmailOner" xml:space="preserve">
+    <value>اميل المدير التنفيذي</value>
+  </data>
+  <data name="lbEmilCompanie" xml:space="preserve">
+    <value>البريد الاكتروني</value>
+  </data>
+  <data name="lbEmilOner" xml:space="preserve">
+    <value>بريد المدير التنفيذي</value>
+  </data>
+  <data name="lbEmployeeAddress" xml:space="preserve">
+    <value>عنوان الموظف</value>
+  </data>
+  <data name="lbEmployeeEmail" xml:space="preserve">
+    <value>إميل الموظف </value>
+  </data>
+  <data name="lbEmployeeFullname" xml:space="preserve">
+    <value>اسم الموظف</value>
+  </data>
+  <data name="lbEmployeePhone" xml:space="preserve">
+    <value>هاتف الموظف</value>
   </data>
   <data name="LbEndtDate" xml:space="preserve">
     <value>Endt Date</value>
@@ -398,6 +587,15 @@
   </data>
   <data name="LbExchangeRate" xml:space="preserve">
     <value>exchange rate</value>
+  </data>
+  <data name="lbExpenseCategory" xml:space="preserve">
+    <value>فئة المصاريف</value>
+  </data>
+  <data name="lbExpiryDate" xml:space="preserve">
+    <value>تاريخ الانتهاء</value>
+  </data>
+  <data name="lbFaceBoock" xml:space="preserve">
+    <value>رابط الفيس بوك </value>
   </data>
   <data name="LbFAQ" xml:space="preserve">
     <value>FAQ</value>
@@ -417,11 +615,20 @@
   <data name="Lbfull_package" xml:space="preserve">
     <value>Full package</value>
   </data>
+  <data name="lbFullName" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="LBGeneralnumbers" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
   <data name="LBGeneralSettings" xml:space="preserve">
     <value>General Settings</value>
   </data>
   <data name="Lbgisurl" xml:space="preserve">
     <value>Link</value>
+  </data>
+  <data name="LbGracePeriod" xml:space="preserve">
+    <value>فترة السماح</value>
   </data>
   <data name="Lbhexcode" xml:space="preserve">
     <value>code</value>
@@ -465,6 +672,12 @@
   <data name="Lbinsert_dt" xml:space="preserve">
     <value>Date added</value>
   </data>
+  <data name="lbInstagram" xml:space="preserve">
+    <value>رابط الانستجرام </value>
+  </data>
+  <data name="LbInvoiceNo" xml:space="preserve">
+    <value>رقم الفاتورة </value>
+  </data>
   <data name="LbIsNorth" xml:space="preserve">
     <value>The South</value>
   </data>
@@ -473,6 +686,12 @@
   </data>
   <data name="LbisPublic" xml:space="preserve">
     <value>isPublic</value>
+  </data>
+  <data name="lbItemName" xml:space="preserve">
+    <value>المادة</value>
+  </data>
+  <data name="lbJobTitle" xml:space="preserve">
+    <value>المسمى الوظيفي</value>
   </data>
   <data name="Lblat" xml:space="preserve">
     <value>Latitude</value>
@@ -489,14 +708,11 @@
   <data name="Lblon" xml:space="preserve">
     <value>longitude</value>
   </data>
+  <data name="lbMabs" xml:space="preserve">
+    <value>رابط الخرائط والعنوان </value>
+  </data>
   <data name="lbMailSender" xml:space="preserve">
     <value>Mail Sender</value>
-  </data>
-  <data name="LBMerchantInformation" xml:space="preserve">
-    <value>Merchant Information</value>
-  </data>
-  <data name="LBMerchants" xml:space="preserve">
-    <value>Merchants</value>
   </data>
   <data name="Lbmerchant_mob" xml:space="preserve">
     <value>phone number</value>
@@ -504,8 +720,23 @@
   <data name="LbMerchant_name" xml:space="preserve">
     <value>Merchant name</value>
   </data>
+  <data name="LBMerchantInformation" xml:space="preserve">
+    <value>Merchant Information</value>
+  </data>
+  <data name="LBMerchants" xml:space="preserve">
+    <value>Merchants</value>
+  </data>
+  <data name="LbMessage" xml:space="preserve">
+    <value>الرسالة </value>
+  </data>
   <data name="LbMessageDescription" xml:space="preserve">
     <value>Message Description</value>
+  </data>
+  <data name="lbMessageTitle" xml:space="preserve">
+    <value>موضوع الرسالة</value>
+  </data>
+  <data name="lbMobile" xml:space="preserve">
+    <value>الموبايل</value>
   </data>
   <data name="lbMsgErrorLogin" xml:space="preserve">
     <value>Error User Name Or Password.....!</value>
@@ -516,11 +747,32 @@
   <data name="lbMsgSavedChangePassword" xml:space="preserve">
     <value>The new password was saved successfully</value>
   </data>
+  <data name="LBMyAboutSectionStartHomeContent" xml:space="preserve">
+    <value>عن المطعم </value>
+  </data>
+  <data name="LBMYAboutSectionStartShopContent" xml:space="preserve">
+    <value>نبذة المتجر</value>
+  </data>
+  <data name="LBMyAccountingRestriction" xml:space="preserve">
+    <value>القيود المحاسبية </value>
+  </data>
   <data name="LBMyArea" xml:space="preserve">
-    <value>Regions</value>
+    <value>المناطق</value>
   </data>
   <data name="LBMyAreaDeliveryTariffs" xml:space="preserve">
     <value>Pricing of delivery companies to the regions</value>
+  </data>
+  <data name="LBMyBestSellingProductsHomeContent" xml:space="preserve">
+    <value>عناوين المنتجات الاكثر مبيعا </value>
+  </data>
+  <data name="LBMYCategory" xml:space="preserve">
+    <value>الفئات </value>
+  </data>
+  <data name="LBMYCategoryServic" xml:space="preserve">
+    <value>فئات الخدمات</value>
+  </data>
+  <data name="LBMyCitie" xml:space="preserve">
+    <value>المدن</value>
   </data>
   <data name="LBMyCity" xml:space="preserve">
     <value>Cities data</value>
@@ -528,8 +780,20 @@
   <data name="LBMyCityDeliveryTariffs" xml:space="preserve">
     <value>Pricing of delivery companies to cities</value>
   </data>
+  <data name="LBMYClassCard" xml:space="preserve">
+    <value>بطاقة مادة</value>
+  </data>
   <data name="LBMyClintWitheDeliveryTariffs" xml:space="preserve">
     <value>Clint Withe Delivery Tariffs</value>
+  </data>
+  <data name="LBMYCompaniesInformation" xml:space="preserve">
+    <value>Companies Information</value>
+  </data>
+  <data name="LBMyCompanieTypeWork" xml:space="preserve">
+    <value>Companie Type Work</value>
+  </data>
+  <data name="LBMYCompanyInformation" xml:space="preserve">
+    <value>معلومات الشركة </value>
   </data>
   <data name="LBMyCurrenciesExchangeRates" xml:space="preserve">
     <value>Currencies</value>
@@ -537,14 +801,32 @@
   <data name="LBMyCustomer" xml:space="preserve">
     <value>Individual customer data</value>
   </data>
+  <data name="LBMyCustomerCategorie" xml:space="preserve">
+    <value>فئات العملاء</value>
+  </data>
+  <data name="LBMyCustomerMessage" xml:space="preserve">
+    <value>رسائل العملاء</value>
+  </data>
   <data name="LBMyCustomerMessages" xml:space="preserve">
     <value>Customer Messages</value>
+  </data>
+  <data name="LBMYDeliveryCompanie" xml:space="preserve">
+    <value>بينات شركات التوصيل</value>
+  </data>
+  <data name="LBMyDeliveryCompanyPricing" xml:space="preserve">
+    <value>تسعير  المناطق  لشركات التوصيل</value>
   </data>
   <data name="LBMyEmailAlartSetting" xml:space="preserve">
     <value>Email Alart Setting</value>
   </data>
   <data name="LBMyExchangeRate" xml:space="preserve">
     <value>exchange rate</value>
+  </data>
+  <data name="LBMyExpense" xml:space="preserve">
+    <value>المصاريف</value>
+  </data>
+  <data name="LBMyExpenseCategory" xml:space="preserve">
+    <value>فئات المصاريف</value>
   </data>
   <data name="LbMyFAQ" xml:space="preserve">
     <value>My FAQ</value>
@@ -555,8 +837,29 @@
   <data name="LbMyFAQList" xml:space="preserve">
     <value>FAQ List</value>
   </data>
+  <data name="LBMYHomeBackgroundimage" xml:space="preserve">
+    <value>صورة الخلفية بالرئيسية</value>
+  </data>
+  <data name="LBMYHomeImageProdact" xml:space="preserve">
+    <value>صورة أسفل المنتجات </value>
+  </data>
+  <data name="LBMyHomeSliderContent" xml:space="preserve">
+    <value>معلومات الهدر بالرئيسية </value>
+  </data>
   <data name="LBMYInformationCompanies" xml:space="preserve">
     <value>Information Companies</value>
+  </data>
+  <data name="LBMyLevelForeAccount" xml:space="preserve">
+    <value>حسابات المستوى الرابع </value>
+  </data>
+  <data name="LBMyLevelThreeAccount" xml:space="preserve">
+    <value>حسابات المستوى الثالث </value>
+  </data>
+  <data name="LBMyLevelTwoAccount" xml:space="preserve">
+    <value>حسابات المستوى الثاني </value>
+  </data>
+  <data name="LBMyMainAccount" xml:space="preserve">
+    <value>الحسابات  الرئيسية</value>
   </data>
   <data name="LBMyMerchant" xml:space="preserve">
     <value>Merchants' data</value>
@@ -573,6 +876,18 @@
   <data name="LBMyOrderStatus" xml:space="preserve">
     <value>Order Status</value>
   </data>
+  <data name="LBMyPaymentMethod" xml:space="preserve">
+    <value>طرق الدفع</value>
+  </data>
+  <data name="LBMYPhotoAddProdact" xml:space="preserve">
+    <value>صور المنتجات</value>
+  </data>
+  <data name="LBMYPhotoHomeSliderContent" xml:space="preserve">
+    <value>صور الهيدر بالرئيسية </value>
+  </data>
+  <data name="LBMYPhotoShopLiftSaide" xml:space="preserve">
+    <value>الصورة الجانبية</value>
+  </data>
   <data name="LBMyProfits" xml:space="preserve">
     <value>My Profits</value>
   </data>
@@ -582,6 +897,9 @@
   <data name="LBMyProjectType" xml:space="preserve">
     <value>Project Type</value>
   </data>
+  <data name="LBMYRequestsTask" xml:space="preserve">
+    <value>Request Task</value>
+  </data>
   <data name="LBMyRolesName" xml:space="preserve">
     <value>Roles </value>
   </data>
@@ -590,6 +908,12 @@
   </data>
   <data name="LBMyShippingPrice" xml:space="preserve">
     <value>Shipping systems pricing</value>
+  </data>
+  <data name="LBMYStaff" xml:space="preserve">
+    <value>الموظفين</value>
+  </data>
+  <data name="LBMYSupplier" xml:space="preserve">
+    <value>بيانات الموردين </value>
   </data>
   <data name="LBMyTask" xml:space="preserve">
     <value>Task Information</value>
@@ -621,8 +945,20 @@
   <data name="LBMyTypeSystemDelivery" xml:space="preserve">
     <value>Type System Delivery</value>
   </data>
+  <data name="LBMyUnit" xml:space="preserve">
+    <value>الوحدات </value>
+  </data>
   <data name="LbName" xml:space="preserve">
     <value>Name</value>
+  </data>
+  <data name="lbNameCompanyAr" xml:space="preserve">
+    <value>الشركة عربي</value>
+  </data>
+  <data name="lbNameCompanyEn" xml:space="preserve">
+    <value>الشركة انكليزي</value>
+  </data>
+  <data name="lbNameOner" xml:space="preserve">
+    <value>المدير التنفيذي</value>
   </data>
   <data name="LbNameRols" xml:space="preserve">
     <value>NameRols</value>
@@ -669,11 +1005,26 @@
   <data name="LbNoutsOrder" xml:space="preserve">
     <value>Nouts Order</value>
   </data>
+  <data name="lbNumberAccount" xml:space="preserve">
+    <value>رقم الحساب</value>
+  </data>
+  <data name="lbNumberaccountingRestrictions" xml:space="preserve">
+    <value>رقم القيد</value>
+  </data>
   <data name="LbOffice" xml:space="preserve">
     <value>Office</value>
   </data>
   <data name="lbOldeAndUserGide" xml:space="preserve">
     <value>Old photo</value>
+  </data>
+  <data name="LbOnerNameAr" xml:space="preserve">
+    <value>Oner Name Ar</value>
+  </data>
+  <data name="lbOnerNamee" xml:space="preserve">
+    <value>المدير التنفيذي</value>
+  </data>
+  <data name="lbOnerPhone" xml:space="preserve">
+    <value>هاتف المدير</value>
   </data>
   <data name="LbOpration" xml:space="preserve">
     <value>العمليات</value>
@@ -699,6 +1050,9 @@
   <data name="Lboutskirts" xml:space="preserve">
     <value>outskirts</value>
   </data>
+  <data name="LbOutstandingBill" xml:space="preserve">
+    <value>حالة الفاتورة</value>
+  </data>
   <data name="LBPaidingInformations" xml:space="preserve">
     <value>Paiding Informations</value>
   </data>
@@ -708,11 +1062,29 @@
   <data name="lbPasswordEmail" xml:space="preserve">
     <value>Password Email</value>
   </data>
+  <data name="lbPaymentMethodAr" xml:space="preserve">
+    <value>طرق الدفع عربي</value>
+  </data>
+  <data name="lbPaymentMethodEn" xml:space="preserve">
+    <value>طرق الدفع انكليزي</value>
+  </data>
+  <data name="lbPhone" xml:space="preserve">
+    <value>الهاتف</value>
+  </data>
   <data name="LbPhoneCompany" xml:space="preserve">
     <value>phone</value>
   </data>
   <data name="LbPhoneCompanySecand" xml:space="preserve">
     <value>Phone 2</value>
+  </data>
+  <data name="LbPhonenumber" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="LbPhonenumberContact" xml:space="preserve">
+    <value>Phonenumber Contact</value>
+  </data>
+  <data name="lbPhoneOner" xml:space="preserve">
+    <value>هاتف المدير التنفيذي</value>
   </data>
   <data name="LbPhoto" xml:space="preserve">
     <value>Photo</value>
@@ -723,8 +1095,20 @@
   <data name="LbPrice" xml:space="preserve">
     <value>السعر</value>
   </data>
+  <data name="lbPricing" xml:space="preserve">
+    <value>سعر التوصيل</value>
+  </data>
   <data name="LBPricingSystem" xml:space="preserve">
     <value>Pricing System</value>
+  </data>
+  <data name="lbProductionDate" xml:space="preserve">
+    <value>تاريخ الصنع</value>
+  </data>
+  <data name="lbProductNameAr" xml:space="preserve">
+    <value>المنتج </value>
+  </data>
+  <data name="lbProductNameEn" xml:space="preserve">
+    <value>اسم المنتج باللغة الانكليزية</value>
   </data>
   <data name="LBProfile" xml:space="preserve">
     <value>Profile</value>
@@ -762,6 +1146,18 @@
   <data name="LbProjectTypeAr" xml:space="preserve">
     <value>Project Type Ar</value>
   </data>
+  <data name="lbPurchaseDate" xml:space="preserve">
+    <value>تاريخ السند </value>
+  </data>
+  <data name="LBPurchaseNumber" xml:space="preserve">
+    <value>رقم سند الشراء</value>
+  </data>
+  <data name="LBPurchaseSubNumber" xml:space="preserve">
+    <value>الرقم الفرعي</value>
+  </data>
+  <data name="LbQuantity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
   <data name="LbQuastion" xml:space="preserve">
     <value>Quastion</value>
   </data>
@@ -774,14 +1170,26 @@
   <data name="LbRate" xml:space="preserve">
     <value>exchange rate</value>
   </data>
-  <data name="LbReceiptStatment" xml:space="preserve">
-    <value>Receipt Statment</value>
-  </data>
   <data name="LBreceipt_dt" xml:space="preserve">
     <value>Receipt Date</value>
   </data>
   <data name="LBreceipt_no" xml:space="preserve">
     <value>Receipt No</value>
+  </data>
+  <data name="LbReceiptStatment" xml:space="preserve">
+    <value>Receipt Statment</value>
+  </data>
+  <data name="LbRequestsAr" xml:space="preserve">
+    <value>Request Ar</value>
+  </data>
+  <data name="LbRequestsEn" xml:space="preserve">
+    <value>Requests En</value>
+  </data>
+  <data name="LbRequestsTitelAr" xml:space="preserve">
+    <value>Requests Titel Ar</value>
+  </data>
+  <data name="LbRequestsTitelEn" xml:space="preserve">
+    <value>Requests Titel En</value>
   </data>
   <data name="LbResivedMony" xml:space="preserve">
     <value>Resived Money</value>
@@ -804,6 +1212,9 @@
   <data name="LBservice_charges" xml:space="preserve">
     <value>Service Charges</value>
   </data>
+  <data name="LBshipping" xml:space="preserve">
+    <value>رسمو شحن</value>
+  </data>
   <data name="LBShippingAddress" xml:space="preserve">
     <value>Shipping Address</value>
   </data>
@@ -812,6 +1223,12 @@
   </data>
   <data name="LBShippingAddressLocation" xml:space="preserve">
     <value>Shipping Address Location</value>
+  </data>
+  <data name="lbShortDescriptionAr" xml:space="preserve">
+    <value>الوصف القصير عربي</value>
+  </data>
+  <data name="lbShortDescriptionEn" xml:space="preserve">
+    <value>الوصف القصير انكليزي</value>
   </data>
   <data name="Lbsms_alert" xml:space="preserve">
     <value> sms alert</value>
@@ -825,14 +1242,23 @@
   <data name="LbSpec" xml:space="preserve">
     <value>Space</value>
   </data>
+  <data name="lbSpecialization" xml:space="preserve">
+    <value>الاختصاص</value>
+  </data>
   <data name="lbSsl_validity" xml:space="preserve">
     <value>Ssl validity</value>
   </data>
   <data name="LbStartDate" xml:space="preserve">
     <value>Start Date</value>
   </data>
+  <data name="lbStatement" xml:space="preserve">
+    <value>البيان</value>
+  </data>
   <data name="LBStreet" xml:space="preserve">
     <value>Street</value>
+  </data>
+  <data name="lbSupplierName" xml:space="preserve">
+    <value>المورد</value>
   </data>
   <data name="LbTaskStatus" xml:space="preserve">
     <value>Task Status</value>
@@ -846,17 +1272,71 @@
   <data name="LbTitleAr" xml:space="preserve">
     <value>Task title Arabic</value>
   </data>
+  <data name="lbTitleButtonAr" xml:space="preserve">
+    <value>عنوان الزر عربي</value>
+  </data>
+  <data name="lbTitleButtonEn" xml:space="preserve">
+    <value>عنوان الزر انكليزي</value>
+  </data>
   <data name="LbTitleEn" xml:space="preserve">
     <value>Task title English</value>
   </data>
+  <data name="lbTitlefiveAr" xml:space="preserve">
+    <value>العنوان الخامس  عربي</value>
+  </data>
+  <data name="lbTitlefiveEn" xml:space="preserve">
+    <value>العنوان الخامس  انكليزي</value>
+  </data>
+  <data name="lbTitleForAr" xml:space="preserve">
+    <value>العنوان الرابع عربي</value>
+  </data>
+  <data name="lbTitleForEn" xml:space="preserve">
+    <value>العنوان الرابع انكليزي</value>
+  </data>
+  <data name="lbTitleOneAr" xml:space="preserve">
+    <value>العنوان الاول عربي</value>
+  </data>
+  <data name="lbTitleOneEn" xml:space="preserve">
+    <value>الاعنوان الاول انكليزي</value>
+  </data>
   <data name="LbTitleShipping" xml:space="preserve">
     <value>Title Shipping</value>
+  </data>
+  <data name="lbTitleThreAr" xml:space="preserve">
+    <value>العنوان الثالث عربي</value>
+  </data>
+  <data name="lbTitleThreEn" xml:space="preserve">
+    <value>العنوان الثالث انكليزي</value>
+  </data>
+  <data name="lbTitleTwoAr" xml:space="preserve">
+    <value>العنوان الثاني عربي</value>
+  </data>
+  <data name="lbTitleTwoEn" xml:space="preserve">
+    <value>العنوان الثاني أنكليزي</value>
+  </data>
+  <data name="Lbtotal" xml:space="preserve">
+    <value>الاجمالي</value>
+  </data>
+  <data name="LBTotalAll" xml:space="preserve">
+    <value>المجموع العام </value>
+  </data>
+  <data name="LBTotalDiscount" xml:space="preserve">
+    <value>إجمالي الخصم</value>
+  </data>
+  <data name="LBTotalQuantity" xml:space="preserve">
+    <value>إجمالي الكمية</value>
   </data>
   <data name="LbTransferAmount" xml:space="preserve">
     <value>Transfer Amount</value>
   </data>
   <data name="LBTransferInformations" xml:space="preserve">
     <value>Transfer Informations</value>
+  </data>
+  <data name="lbTypeOrderAr" xml:space="preserve">
+    <value>الحالة </value>
+  </data>
+  <data name="lbTypeOrderEn" xml:space="preserve">
+    <value>الحالة انكليزي</value>
   </data>
   <data name="LbTypesCompanies" xml:space="preserve">
     <value>Category</value>
@@ -879,6 +1359,9 @@
   <data name="LbTypeSystem" xml:space="preserve">
     <value>system</value>
   </data>
+  <data name="lbUnit" xml:space="preserve">
+    <value>الوحدة</value>
+  </data>
   <data name="lbUpdate" xml:space="preserve">
     <value>Update</value>
   </data>
@@ -888,11 +1371,23 @@
   <data name="LBUpload_image" xml:space="preserve">
     <value>upload</value>
   </data>
+  <data name="lbUrlButtonAr" xml:space="preserve">
+    <value>رابط التوجيه عربي</value>
+  </data>
+  <data name="lbUrlButtonEn" xml:space="preserve">
+    <value>رابط التوجيه انكليزي</value>
+  </data>
+  <data name="LbUS_delivery" xml:space="preserve">
+    <value>Delivery system user</value>
+  </data>
   <data name="LbUserEmage" xml:space="preserve">
     <value>Image</value>
   </data>
   <data name="LbUserEmail" xml:space="preserve">
     <value>User Email</value>
+  </data>
+  <data name="LBUserInformation" xml:space="preserve">
+    <value>User InforMation</value>
   </data>
   <data name="LbUserName" xml:space="preserve">
     <value>Name</value>
@@ -906,8 +1401,8 @@
   <data name="LBUsersInformationEn" xml:space="preserve">
     <value>Users Information</value>
   </data>
-  <data name="LbUS_delivery" xml:space="preserve">
-    <value>Delivery system user</value>
+  <data name="Lbwebsite" xml:space="preserve">
+    <value>الموقع الاكتروني</value>
   </data>
   <data name="LbWeight" xml:space="preserve">
     <value>Weight</value>
@@ -918,6 +1413,9 @@
   <data name="LBWorkspaces" xml:space="preserve">
     <value>Workspaces</value>
   </data>
+  <data name="lbYouTube" xml:space="preserve">
+    <value>رابط اليوتيوب</value>
+  </data>
   <data name="LbZone" xml:space="preserve">
     <value>Residential quarter</value>
   </data>
@@ -927,14 +1425,44 @@
   <data name="ReceiptNo" xml:space="preserve">
     <value>Receipt No</value>
   </data>
+  <data name="TBMyTypeOrder" xml:space="preserve">
+    <value>حالة الطلبات </value>
+  </data>
+  <data name="VLAccountNameDoplceted" xml:space="preserve">
+    <value>تم إدخال اسم الحساب مسبقا يرجى التأكد وإعادة المحاولة لاحقا...!</value>
+  </data>
   <data name="VLAreadoplceted" xml:space="preserve">
     <value>Pricing has already been added to the region. Please check and try again later...!</value>
+  </data>
+  <data name="VLAreaNameDoplceted" xml:space="preserve">
+    <value>تم إدخال اسم المنطقة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ..!</value>
   </data>
   <data name="VLCatchReceiptNoDoplceted" xml:space="preserve">
     <value>The receipt voucher number has already been entered. Please verify and try again later...!</value>
   </data>
+  <data name="VLCategorysArDoplceted" xml:space="preserve">
+    <value>تم أدخال الفئة مسبقا باللغة العربية يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLCategorysEnDoplceted" xml:space="preserve">
+    <value>تم إدخال الفئة باللغة الانكليزية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VLCitieNameDoplceted" xml:space="preserve">
+    <value>تم إدخال اسم المدينة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
   <data name="VLCitydoplceted" xml:space="preserve">
     <value>The delivery price for this city has been entered. Please check and try again later...!</value>
+  </data>
+  <data name="VLCompanieTypeWorkArDoplceted" xml:space="preserve">
+    <value>The company status has already been entered in Arabic. Please check and try again later...!</value>
+  </data>
+  <data name="VLCompanieTypeWorkDoplceted" xml:space="preserve">
+    <value>The working status with the company has already been entered in English. Please check and try again later...!</value>
+  </data>
+  <data name="VLCompanyInformationsArDoplceted" xml:space="preserve">
+    <value>تم إدخال اسم الشركة باللغة العربية مسبقا يرجى التأكد وإعادة المحاولة لاحقا...!</value>
+  </data>
+  <data name="VLCompanyInformationsEnDoplceted" xml:space="preserve">
+    <value>تم إدخال اسم الشركة باللغة الأنكليزية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
   </data>
   <data name="VLCompanyNameDoplceted" xml:space="preserve">
     <value>The company has already been entered. Please check and try again later....!</value>
@@ -963,6 +1491,15 @@
   <data name="VLdELETESuccessfully" xml:space="preserve">
     <value>The deletion was completed successfully</value>
   </data>
+  <data name="VlDeliveryCompanie" xml:space="preserve">
+    <value>يرجى إدراج اسم شركة التوصيل لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VLDeliveryCompanieDoplceted" xml:space="preserve">
+    <value>تم إدخال شركة التوصيل مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLDeliveryCompanyPricingNameDoplceted" xml:space="preserve">
+    <value>تم تسعير المنطقة مسبا من قبل شركة التوصيل يرجى التأكد وإعادة المحاولة ...!</value>
+  </data>
   <data name="VLDescriptionareadoplceted" xml:space="preserve">
     <value>The region has already been entered. Please verify and try again later...!</value>
   </data>
@@ -987,6 +1524,18 @@
   <data name="VLEmailOreUserOrPaswo" xml:space="preserve">
     <value>Email or username already exists...!</value>
   </data>
+  <data name="VLEmilCompanieDoplceted" xml:space="preserve">
+    <value>تم إدخال اميل  شركة التوصيل ممسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLEmilOnerDoplceted" xml:space="preserve">
+    <value>تم إدخال إميل المدير التنفيذي مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLEmployeeFullnameDoplceted" xml:space="preserve">
+    <value>تم إدخال اسم الموظف مسبقا يرجى التأكد وإعادة المحاولة لاحقا ..!</value>
+  </data>
+  <data name="VLEmployeePhoneDoplceted" xml:space="preserve">
+    <value>تم إدخال رقم الهاتف مسبقا يرجى التأكد وإعادة المحاولة لا حقا ...!</value>
+  </data>
   <data name="VLErrorDeleteData" xml:space="preserve">
     <value>Deletion error...!</value>
   </data>
@@ -999,6 +1548,9 @@
   <data name="VLExchangeRateDoplceted" xml:space="preserve">
     <value>The currency has already been entered. Please check and try again later...!</value>
   </data>
+  <data name="VLExpenseCategoryDoplceted" xml:space="preserve">
+    <value>تم ادخال فئة المصروفات مسبقا  يرجى التأكد واعادة المحاولة لاحقا  لتتم العملية بنجاح ...!</value>
+  </data>
   <data name="VLFAQDoplceted" xml:space="preserve">
     <value>The question has already been entered.. Please check and try again later..!</value>
   </data>
@@ -1008,6 +1560,12 @@
   <data name="VLimageuplode" xml:space="preserve">
     <value>Please upload the image...!</value>
   </data>
+  <data name="VLInvoiceNumberDoplceted" xml:space="preserve">
+    <value>تم أدخال رقم الفاتورة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLItemNameDoplceted" xml:space="preserve">
+    <value>تم إدخال المادة مسبقا يرجى التأكد وإعاد المحاولة لاحقا ...!</value>
+  </data>
   <data name="VLMerchantDoplceted" xml:space="preserve">
     <value>The merchant has been introduced to the pricing system. Please confirm and try again later...!</value>
   </data>
@@ -1016,6 +1574,36 @@
   </data>
   <data name="VLMerchantNameDoplceted" xml:space="preserve">
     <value>The email address has already been added. Please check and try again later...!</value>
+  </data>
+  <data name="VLNumberAccountDoplceted" xml:space="preserve">
+    <value>تم إدخال رقم الحساب مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VlOnerName" xml:space="preserve">
+    <value>يرجى أدراج اسم المدير التنفيذي لشركة التوصيل لتتم العملية بنجاح...!</value>
+  </data>
+  <data name="VLOnerNameDoplceted" xml:space="preserve">
+    <value>تم إدخال اسم المدير التنفيذي مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLOnerPhoneDoplceted" xml:space="preserve">
+    <value>تم إدخال هاتف المدير التنفيذي مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLPaymentMethodArDoplceted" xml:space="preserve">
+    <value>تم إدخال طريقة الدفع باللغة الربية ممسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLPaymentMethodEnDoplceted" xml:space="preserve">
+    <value>تم إدخال  طريقة الدفع باللغة الانكليزية يرجى التأد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VlPhoneNumber" xml:space="preserve">
+    <value>يرجى إدراج هاتف شركة التوصيل لتتم العملية بنجاح ...!</value>
+  </data>
+  <data name="VLPhoneNumberDoplceted" xml:space="preserve">
+    <value>تم إدخال هاتف شركة التوصيل مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VLProductsArDoplceted" xml:space="preserve">
+    <value>تم إدخال المنتج باللغة العربية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLProductsEnDoplceted" xml:space="preserve">
+    <value>تم إدخال المنتج مسبقا باللغة الانكليزية يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
   </data>
   <data name="VLProjectInformationArDoplceted" xml:space="preserve">
     <value>The project name has already been entered in Arabic. Please check and try again later...!</value>
@@ -1038,14 +1626,29 @@
   <data name="VLSavedSuccessfully" xml:space="preserve">
     <value>The saving process was completed successfully</value>
   </data>
+  <data name="VLSuppliersEnDoplceted" xml:space="preserve">
+    <value>تم إدخال اسم المورد مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
   <data name="VLTaskStatusArDoplceted" xml:space="preserve">
     <value>The task status has already been entered in Arabic. Please check and try again later.</value>
   </data>
   <data name="VLTaskStatusDoplceted" xml:space="preserve">
     <value>The task status has already been entered in English. Please check and try again later.</value>
   </data>
+  <data name="VLTitleOneArDoplceted" xml:space="preserve">
+    <value>تم الادخال مسبقا باللغة العربية  يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
+  <data name="VLTitleOneEnDoplceted" xml:space="preserve">
+    <value>تم الادخال  باللغة الأنكليزة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
+  </data>
   <data name="VLTitleShippingoplceted" xml:space="preserve">
     <value>The shipping price address has been entered. Please verify and try again later....!</value>
+  </data>
+  <data name="VLTypeOrderArDoplceted" xml:space="preserve">
+    <value>تم إدخال  حالة الطلب باللغة العربية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLTypeOrderEnDoplceted" xml:space="preserve">
+    <value>تم إدخال حالة الطلب باللغة الانكليزية يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
   </data>
   <data name="VLTypesCompaniesDoplceted" xml:space="preserve">
     <value>The company category has already been entered. Please check and try again later...!</value>
@@ -1065,517 +1668,10 @@
   <data name="VLTypeSystemDoplceted" xml:space="preserve">
     <value>The system has already been entered. Please confirm and try again later...!</value>
   </data>
-  <data name="VLUpdatedSuccessfully" xml:space="preserve">
-    <value>The modification process was completed successfully</value>
-  </data>
-  <data name="LBMYRequestsTask" xml:space="preserve">
-    <value>Request Task</value>
-  </data>
-  <data name="LbRequestsTitelAr" xml:space="preserve">
-    <value>Requests Titel Ar</value>
-  </data>
-  <data name="LbRequestsAr" xml:space="preserve">
-    <value>Request Ar</value>
-  </data>
-  <data name="LbRequestsTitelEn" xml:space="preserve">
-    <value>Requests Titel En</value>
-  </data>
-  <data name="LbRequestsEn" xml:space="preserve">
-    <value>Requests En</value>
-  </data>
-  <data name="LBAddEditRequestsTask" xml:space="preserve">
-    <value>Add and edit task requests</value>
-  </data>
-  <data name="LBUserInformation" xml:space="preserve">
-    <value>User InforMation</value>
-  </data>
-  <data name="VLCompanieTypeWorkDoplceted" xml:space="preserve">
-    <value>The working status with the company has already been entered in English. Please check and try again later...!</value>
-  </data>
-  <data name="LBMyCompanieTypeWork" xml:space="preserve">
-    <value>Companie Type Work</value>
-  </data>
-  <data name="LbCompanieTypeWorkAr" xml:space="preserve">
-    <value>Companie Type Work Ar</value>
-  </data>
-  <data name="LbCompanieTypeWorkEn" xml:space="preserve">
-    <value>Companie Type Work En</value>
-  </data>
-  <data name="LBGeneralnumbers" xml:space="preserve">
-    <value>General Settings</value>
-  </data>
-  <data name="VLCompanieTypeWorkArDoplceted" xml:space="preserve">
-    <value>The company status has already been entered in Arabic. Please check and try again later...!</value>
-  </data>
-  <data name="LBAddCompanieTypeWork" xml:space="preserve">
-    <value>Adding and modifying Companie Type Work</value>
-  </data>
-  <data name="LBMYCompaniesInformation" xml:space="preserve">
-    <value>Companies Information</value>
-  </data>
-  <data name="LbCompanyNameAr" xml:space="preserve">
-    <value>Company Name Ar</value>
-  </data>
-  <data name="LbPhonenumber" xml:space="preserve">
-    <value>رقم الهاتف</value>
-  </data>
-  <data name="LbEmailMaster" xml:space="preserve">
-    <value>Email Master</value>
-  </data>
-  <data name="LbAddressAr" xml:space="preserve">
-    <value>العنوان عربي </value>
-  </data>
-  <data name="LbOnerNameAr" xml:space="preserve">
-    <value>Oner Name Ar</value>
-  </data>
-  <data name="LbEmaiContact" xml:space="preserve">
-    <value>Emai Contact</value>
-  </data>
-  <data name="LbPhonenumberContact" xml:space="preserve">
-    <value>Phonenumber Contact</value>
-  </data>
-  <data name="VLCategorysEnDoplceted" xml:space="preserve">
-    <value>تم إدخال الفئة باللغة الانكليزية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
-  </data>
-  <data name="VLCategorysArDoplceted" xml:space="preserve">
-    <value>تم أدخال الفئة مسبقا باللغة العربية يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
-  </data>
-  <data name="LBMYCategory" xml:space="preserve">
-    <value>الفئات </value>
-  </data>
-  <data name="lbCategoryAr" xml:space="preserve">
-    <value>الفئات عربي</value>
-  </data>
-  <data name="lbCategoryEn" xml:space="preserve">
-    <value>الفئات إنكليزي</value>
-  </data>
-  <data name="VLProductsEnDoplceted" xml:space="preserve">
-    <value>تم إدخال المنتج مسبقا باللغة الانكليزية يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
-  </data>
-  <data name="VLProductsArDoplceted" xml:space="preserve">
-    <value>تم إدخال المنتج باللغة العربية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
-  </data>
-  <data name="lbProductNameAr" xml:space="preserve">
-    <value>المنتج </value>
-  </data>
-  <data name="lbProductNameEn" xml:space="preserve">
-    <value>اسم المنتج باللغة الانكليزية</value>
-  </data>
-  <data name="LBMyCustomerCategorie" xml:space="preserve">
-    <value>فئات العملاء</value>
-  </data>
-  <data name="lbCustomerCategorieAr" xml:space="preserve">
-    <value>فئة العميل عربي</value>
-  </data>
-  <data name="lbCustomerCategorieEn" xml:space="preserve">
-    <value>فئة العميل انكليزي</value>
-  </data>
-  <data name="LBAddCustomerCategorie" xml:space="preserve">
-    <value>إضافة وتعديل فئات العملاء</value>
-  </data>
-  <data name="VLInvoiceNumberDoplceted" xml:space="preserve">
-    <value>تم أدخال رقم الفاتورة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
-  </data>
-  <data name="VLPaymentMethodEnDoplceted" xml:space="preserve">
-    <value>تم إدخال  طريقة الدفع باللغة الانكليزية يرجى التأد وإعادة المحاولة لاحقا ....!</value>
-  </data>
-  <data name="VLPaymentMethodArDoplceted" xml:space="preserve">
-    <value>تم إدخال طريقة الدفع باللغة الربية ممسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
-  </data>
-  <data name="LBMyPaymentMethod" xml:space="preserve">
-    <value>طرق الدفع</value>
-  </data>
-  <data name="lbPaymentMethodAr" xml:space="preserve">
-    <value>طرق الدفع عربي</value>
-  </data>
-  <data name="lbPaymentMethodEn" xml:space="preserve">
-    <value>طرق الدفع انكليزي</value>
-  </data>
-  <data name="VLTitleOneEnDoplceted" xml:space="preserve">
-    <value>تم الادخال  باللغة الأنكليزة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
-  </data>
-  <data name="VLTitleOneArDoplceted" xml:space="preserve">
-    <value>تم الادخال مسبقا باللغة العربية  يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
-  </data>
-  <data name="LBMyHomeSliderContent" xml:space="preserve">
-    <value>معلومات الهدر بالرئيسية </value>
-  </data>
-  <data name="lbTitleOneAr" xml:space="preserve">
-    <value>العنوان الاول عربي</value>
-  </data>
-  <data name="lbTitleOneEn" xml:space="preserve">
-    <value>الاعنوان الاول انكليزي</value>
-  </data>
-  <data name="lbTitleTwoAr" xml:space="preserve">
-    <value>العنوان الثاني عربي</value>
-  </data>
-  <data name="lbTitleTwoEn" xml:space="preserve">
-    <value>العنوان الثاني أنكليزي</value>
-  </data>
-  <data name="lbTitleButtonAr" xml:space="preserve">
-    <value>عنوان الزر عربي</value>
-  </data>
-  <data name="lbTitleButtonEn" xml:space="preserve">
-    <value>عنوان الزر انكليزي</value>
-  </data>
-  <data name="lbUrlButtonAr" xml:space="preserve">
-    <value>رابط التوجيه عربي</value>
-  </data>
-  <data name="lbUrlButtonEn" xml:space="preserve">
-    <value>رابط التوجيه انكليزي</value>
-  </data>
-  <data name="LBAddHomeSliderContent" xml:space="preserve">
-    <value>أضافة وتعديل بينات الهيدر في الرئيسية ...!</value>
-  </data>
-  <data name="LBMYPhotoHomeSliderContent" xml:space="preserve">
-    <value>صور الهيدر بالرئيسية </value>
-  </data>
-  <data name="LBAddEditPhotoHomeSliderContent" xml:space="preserve">
-    <value>اضافة وتعديل  الصور في الهدر </value>
-  </data>
-  <data name="LBMyAboutSectionStartHomeContent" xml:space="preserve">
-    <value>عن المطعم </value>
-  </data>
-  <data name="VLCompanyInformationsEnDoplceted" xml:space="preserve">
-    <value>تم إدخال اسم الشركة باللغة الأنكليزية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
-  </data>
-  <data name="VLCompanyInformationsArDoplceted" xml:space="preserve">
-    <value>تم إدخال اسم الشركة باللغة العربية مسبقا يرجى التأكد وإعادة المحاولة لاحقا...!</value>
-  </data>
-  <data name="LBMYCompanyInformation" xml:space="preserve">
-    <value>معلومات الشركة </value>
-  </data>
-  <data name="lbNameCompanyAr" xml:space="preserve">
-    <value>الشركة عربي</value>
-  </data>
-  <data name="lbNameCompanyEn" xml:space="preserve">
-    <value>الشركة انكليزي</value>
-  </data>
-  <data name="lbPhone" xml:space="preserve">
-    <value>الهاتف</value>
-  </data>
-  <data name="lbMobile" xml:space="preserve">
-    <value>الموبايل</value>
-  </data>
-  <data name="lbNameOner" xml:space="preserve">
-    <value>المدير التنفيذي</value>
-  </data>
-  <data name="lbPhoneOner" xml:space="preserve">
-    <value>هاتف المدير التنفيذي</value>
-  </data>
-  <data name="lbEmailOner" xml:space="preserve">
-    <value>اميل المدير التنفيذي</value>
-  </data>
-  <data name="lbShortDescriptionAr" xml:space="preserve">
-    <value>الوصف القصير عربي</value>
-  </data>
-  <data name="lbShortDescriptionEn" xml:space="preserve">
-    <value>الوصف القصير انكليزي</value>
-  </data>
-  <data name="LbAddressEn" xml:space="preserve">
-    <value>العنوان انكليزي</value>
-  </data>
-  <data name="lbFaceBoock" xml:space="preserve">
-    <value>رابط الفيس بوك </value>
-  </data>
-  <data name="lbInstagram" xml:space="preserve">
-    <value>رابط الانستجرام </value>
-  </data>
-  <data name="lbYouTube" xml:space="preserve">
-    <value>رابط اليوتيوب</value>
-  </data>
-  <data name="lbMabs" xml:space="preserve">
-    <value>رابط الخرائط والعنوان </value>
-  </data>
-  <data name="LBAddEditCompanyInformation" xml:space="preserve">
-    <value>إضافة  وتعديل  بيانات الشركة </value>
-  </data>
-  <data name="LbInvoiceNo" xml:space="preserve">
-    <value>رقم الفاتورة </value>
-  </data>
-  <data name="LbDateInvos" xml:space="preserve">
-    <value>تاريخ الفاتورة</value>
-  </data>
-  <data name="LbQuantity" xml:space="preserve">
-    <value>الكمية</value>
-  </data>
-  <data name="Lbtotal" xml:space="preserve">
-    <value>الاجمالي</value>
-  </data>
-  <data name="LbOutstandingBill" xml:space="preserve">
-    <value>حالة الفاتورة</value>
-  </data>
-  <data name="VLExpenseCategoryDoplceted" xml:space="preserve">
-    <value>تم ادخال فئة المصروفات مسبقا  يرجى التأكد واعادة المحاولة لاحقا  لتتم العملية بنجاح ...!</value>
-  </data>
-  <data name="LBMyExpenseCategory" xml:space="preserve">
-    <value>فئات المصاريف</value>
-  </data>
-  <data name="lbExpenseCategory" xml:space="preserve">
-    <value>فئة المصاريف</value>
-  </data>
-  <data name="LBAddAboutSectionStartHomeContent" xml:space="preserve">
-    <value>أضافة وتعديل قسم عنا في الرئيسية </value>
-  </data>
-  <data name="LBAddExpenseCategory" xml:space="preserve">
-    <value>إضافة وتعديل فئات المصاريف</value>
-  </data>
-  <data name="LBMyExpense" xml:space="preserve">
-    <value>المصاريف</value>
-  </data>
-  <data name="lbBondNumber" xml:space="preserve">
-    <value>رقم السند</value>
-  </data>
-  <data name="lbStatement" xml:space="preserve">
-    <value>البيان</value>
-  </data>
-  <data name="VLSuppliersEnDoplceted" xml:space="preserve">
-    <value>تم إدخال اسم المورد مسبقا يرجى التأكد وإعادة المحاولة لاحقا ....!</value>
-  </data>
-  <data name="LBMYSupplier" xml:space="preserve">
-    <value>بيانات الموردين </value>
-  </data>
-  <data name="lbSupplierName" xml:space="preserve">
-    <value>المورد</value>
-  </data>
-  <data name="lbSpecialization" xml:space="preserve">
-    <value>الاختصاص</value>
-  </data>
-  <data name="lbAddress" xml:space="preserve">
-    <value>العنوان </value>
-  </data>
-  <data name="lbDebtlimit" xml:space="preserve">
-    <value>سقف المديونية</value>
-  </data>
-  <data name="LbGracePeriod" xml:space="preserve">
-    <value>فترة السماح</value>
-  </data>
-  <data name="Lbwebsite" xml:space="preserve">
-    <value>الموقع الاكتروني</value>
-  </data>
-  <data name="LBAddEditSupplier" xml:space="preserve">
-    <value>إضافة وتعديل بيانات مورد</value>
-  </data>
   <data name="VLUnitDoplceted" xml:space="preserve">
     <value>تم إدخال الوحدة مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
   </data>
-  <data name="LBMyUnit" xml:space="preserve">
-    <value>الوحدات </value>
-  </data>
-  <data name="lbUnit" xml:space="preserve">
-    <value>الوحدة</value>
-  </data>
-  <data name="LBAddUnit" xml:space="preserve">
-    <value>إضافة وتعديل الوحدة </value>
-  </data>
-  <data name="VLItemNameDoplceted" xml:space="preserve">
-    <value>تم إدخال المادة مسبقا يرجى التأكد وإعاد المحاولة لاحقا ...!</value>
-  </data>
-  <data name="LBMYClassCard" xml:space="preserve">
-    <value>بطاقة مادة</value>
-  </data>
-  <data name="lbItemName" xml:space="preserve">
-    <value>المادة</value>
-  </data>
-  <data name="lbCodeItem" xml:space="preserve">
-    <value>كود المادة</value>
-  </data>
-  <data name="lbProductionDate" xml:space="preserve">
-    <value>تاريخ الصنع</value>
-  </data>
-  <data name="lbExpiryDate" xml:space="preserve">
-    <value>تاريخ الانتهاء</value>
-  </data>
-  <data name="LBAddEditClassCard" xml:space="preserve">
-    <value>إضافة وتعديل المواد</value>
-  </data>
-  <data name="LBMyAccountingRestriction" xml:space="preserve">
-    <value>القيود المحاسبية </value>
-  </data>
-  <data name="lbNumberaccountingRestrictions" xml:space="preserve">
-    <value>رقم القيد</value>
-  </data>
-  <data name="lbAccountingName" xml:space="preserve">
-    <value>اسم الحساب</value>
-  </data>
-  <data name="lbBondType" xml:space="preserve">
-    <value>نوع السند</value>
-  </data>
-  <data name="lbDebtor" xml:space="preserve">
-    <value>مدين</value>
-  </data>
-  <data name="lbcreditor" xml:space="preserve">
-    <value>دائن</value>
-  </data>
-  <data name="LBAddAccountingRestriction" xml:space="preserve">
-    <value>إضافة وتعديل القيود المحاسبية </value>
-  </data>
-  <data name="LBPurchaseNumber" xml:space="preserve">
-    <value>رقم سند الشراء</value>
-  </data>
-  <data name="LBPurchaseSubNumber" xml:space="preserve">
-    <value>الرقم الفرعي</value>
-  </data>
-  <data name="LBTotalQuantity" xml:space="preserve">
-    <value>إجمالي الكمية</value>
-  </data>
-  <data name="LBTotalDiscount" xml:space="preserve">
-    <value>إجمالي الخصم</value>
-  </data>
-  <data name="LBshipping" xml:space="preserve">
-    <value>رسمو شحن</value>
-  </data>
-  <data name="LBTotalAll" xml:space="preserve">
-    <value>المجموع العام </value>
-  </data>
-  <data name="lbPurchaseDate" xml:space="preserve">
-    <value>تاريخ السند </value>
-  </data>
-  <data name="LBMyBestSellingProductsHomeContent" xml:space="preserve">
-    <value>عناوين المنتجات الاكثر مبيعا </value>
-  </data>
-  <data name="LBAddBestSellingProductsHomeContent" xml:space="preserve">
-    <value>إضافة وتعديل  عناوين الاكثر مبيعا </value>
-  </data>
-  <data name="LBMYCategoryServic" xml:space="preserve">
-    <value>فئات الخدمات</value>
-  </data>
-  <data name="lbTitleThreAr" xml:space="preserve">
-    <value>العنوان الثالث عربي</value>
-  </data>
-  <data name="lbTitleThreEn" xml:space="preserve">
-    <value>العنوان الثالث انكليزي</value>
-  </data>
-  <data name="lbTitleForAr" xml:space="preserve">
-    <value>العنوان الرابع عربي</value>
-  </data>
-  <data name="lbTitleForEn" xml:space="preserve">
-    <value>العنوان الرابع انكليزي</value>
-  </data>
-  <data name="lbTitlefiveAr" xml:space="preserve">
-    <value>العنوان الخامس  عربي</value>
-  </data>
-  <data name="lbTitlefiveEn" xml:space="preserve">
-    <value>العنوان الخامس  انكليزي</value>
-  </data>
-  <data name="LBAddEditCategoryServic" xml:space="preserve">
-    <value>إضافة وتعديل فئات الخدمات </value>
-  </data>
-  <data name="LBMYHomeBackgroundimage" xml:space="preserve">
-    <value>صورة الخلفية بالرئيسية</value>
-  </data>
-  <data name="LBAddEditHomeBackgroundimage" xml:space="preserve">
-    <value>إضافة وتعديل صورة الخلفية بالرئيسية </value>
-  </data>
-  <data name="LBMYHomeImageProdact" xml:space="preserve">
-    <value>صورة أسفل المنتجات </value>
-  </data>
-  <data name="LBAddEditHomeImageProdact" xml:space="preserve">
-    <value>إضافة وتعديل الصور اسفل المنتجات </value>
-  </data>
-  <data name="VLNumberAccountDoplceted" xml:space="preserve">
-    <value>تم إدخال رقم الحساب مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
-  </data>
-  <data name="VLAccountNameDoplceted" xml:space="preserve">
-    <value>تم إدخال اسم الحساب مسبقا يرجى التأكد وإعادة المحاولة لاحقا...!</value>
-  </data>
-  <data name="LBMyMainAccount" xml:space="preserve">
-    <value>الحسابات  الرئيسية</value>
-  </data>
-  <data name="lbNumberAccount" xml:space="preserve">
-    <value>رقم الحساب</value>
-  </data>
-  <data name="lbAccountName" xml:space="preserve">
-    <value>اسم الحساب</value>
-  </data>
-  <data name="LBAddMainAccount" xml:space="preserve">
-    <value>إضافة وتعديل الحسابات الرئيسية </value>
-  </data>
-  <data name="LBMyLevelTwoAccount" xml:space="preserve">
-    <value>حسابات المستوى الثاني </value>
-  </data>
-  <data name="LBAddLevelTwoAccount" xml:space="preserve">
-    <value>إضافة وتعديل حسابات المستوى الثاني </value>
-  </data>
-  <data name="LBMyLevelThreeAccount" xml:space="preserve">
-    <value>حسابات المستوى الثالث </value>
-  </data>
-  <data name="LBAddLevelThreeAccount" xml:space="preserve">
-    <value>إضافة وتعديل حسابات المستوى الثالث</value>
-  </data>
-  <data name="LBMyLevelForeAccount" xml:space="preserve">
-    <value>حسابات المستوى الرابع </value>
-  </data>
-  <data name="LBAddLevelForeAccount" xml:space="preserve">
-    <value>إضافة وتعديل  حسابات المستوى الرابع </value>
-  </data>
-  <data name="VLEmployeeFullnameDoplceted" xml:space="preserve">
-    <value>تم إدخال اسم الموظف مسبقا يرجى التأكد وإعادة المحاولة لاحقا ..!</value>
-  </data>
-  <data name="VLEmployeePhoneDoplceted" xml:space="preserve">
-    <value>تم إدخال رقم الهاتف مسبقا يرجى التأكد وإعادة المحاولة لا حقا ...!</value>
-  </data>
-  <data name="LBMYStaff" xml:space="preserve">
-    <value>الموظفين</value>
-  </data>
-  <data name="lbEmployeeFullname" xml:space="preserve">
-    <value>اسم الموظف</value>
-  </data>
-  <data name="lbEmployeePhone" xml:space="preserve">
-    <value>هاتف الموظف</value>
-  </data>
-  <data name="lbEmployeeEmail" xml:space="preserve">
-    <value>إميل الموظف </value>
-  </data>
-  <data name="lbAccountNumber" xml:space="preserve">
-    <value>رقم الحساب</value>
-  </data>
-  <data name="lbEmployeeAddress" xml:space="preserve">
-    <value>عنوان الموظف</value>
-  </data>
-  <data name="lbJobTitle" xml:space="preserve">
-    <value>المسمى الوظيفي</value>
-  </data>
-  <data name="LBAddEditStaff" xml:space="preserve">
-    <value>إضافة وتعديل الموظفين </value>
-  </data>
-  <data name="LBMYAboutSectionStartShopContent" xml:space="preserve">
-    <value>نبذة المتجر</value>
-  </data>
-  <data name="LBAddEditAboutSectionStartShopContent" xml:space="preserve">
-    <value>إضافة وتعديل  النبذة في المتجر </value>
-  </data>
-  <data name="lbDateBond" xml:space="preserve">
-    <value>تاريخ السند</value>
-  </data>
-  <data name="LBMYPhotoShopLiftSaide" xml:space="preserve">
-    <value>الصورة الجانبية</value>
-  </data>
-  <data name="LBAddEditPhotoShopLiftSaide" xml:space="preserve">
-    <value>إضافة وتعديل الصورة الجانبية </value>
-  </data>
-  <data name="LBMYPhotoAddProdact" xml:space="preserve">
-    <value>صور المنتجات</value>
-  </data>
-  <data name="LBAddEditPhotoAddProdact" xml:space="preserve">
-    <value>إضافة وتعديل صور المنتجات </value>
-  </data>
-  <data name="LBMyCustomerMessage" xml:space="preserve">
-    <value>رسائل العملاء</value>
-  </data>
-  <data name="lbFullName" xml:space="preserve">
-    <value>الاسم</value>
-  </data>
-  <data name="lbMessageTitle" xml:space="preserve">
-    <value>موضوع الرسالة</value>
-  </data>
-  <data name="LbEmailMessage" xml:space="preserve">
-    <value>البريد المرتبط</value>
-  </data>
-  <data name="LbMessage" xml:space="preserve">
-    <value>الرسالة </value>
-  </data>
-  <data name="LBAddCustomerMessage" xml:space="preserve">
-    <value>إضافة وتعديل رسائل العملاء</value>
+  <data name="VLUpdatedSuccessfully" xml:space="preserve">
+    <value>The modification process was completed successfully</value>
   </data>
 </root>

@@ -124,7 +124,7 @@ namespace Domin.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The number of characters entered must not exceed 100 characters...!.
+        ///   Looks up a localized string similar to لايمكن أن تتجاوز عدد الاحرف المدخلة عن 100 حرف .
         /// </summary>
         internal static string MaxLength100 {
             get {
@@ -421,6 +421,15 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج اسم المنطقة لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlAreaName {
+            get {
+                return ResourceManager.GetString("VlAreaName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please include the exchange rate in the local currency on the black market for the process to complete successfully....!.
         /// </summary>
         internal static string VlBlackMarketExchangeRate {
@@ -462,6 +471,15 @@ namespace Domin.Resource {
         internal static string VlCategoryNameEn {
             get {
                 return ResourceManager.GetString("VlCategoryNameEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج اسم المدينة لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlCitieName {
+            get {
+                return ResourceManager.GetString("VlCitieName", resourceCulture);
             }
         }
         
@@ -610,6 +628,24 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج اسم شركة التوصيل لتتم العلية بنجاح ...!.
+        /// </summary>
+        internal static string VlDeliveryCompanie {
+            get {
+                return ResourceManager.GetString("VlDeliveryCompanie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج عنوان شركة التوصيل  لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlDeliveryCompanieAddress {
+            get {
+                return ResourceManager.GetString("VlDeliveryCompanieAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please include descreption for the process to complete successfully...!.
         /// </summary>
         internal static string VlDescreption {
@@ -705,6 +741,24 @@ namespace Domin.Resource {
         internal static string VlEmailOner {
             get {
                 return ResourceManager.GetString("VlEmailOner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج الاميل الخاص بشركة التوصيل لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlEmilCompanie {
+            get {
+                return ResourceManager.GetString("VlEmilCompanie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج البريد الاكتروني  الخاص بالمدير التنفيذي لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlEmilOner {
+            get {
+                return ResourceManager.GetString("VlEmilOner", resourceCulture);
             }
         }
         
@@ -961,6 +1015,15 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يرجى إدراج اسم المدير التنفيذي لتتم العملية بنجاح ....!.
+        /// </summary>
+        internal static string VlOnerName {
+            get {
+                return ResourceManager.GetString("VlOnerName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to يرجى أدراج اسم المدير التنفيذي بالشركة باللغة العربية لتتم العملية بنجاح ....!.
         /// </summary>
         internal static string VlOnerNameAr {
@@ -975,6 +1038,15 @@ namespace Domin.Resource {
         internal static string VlOnerNameEn {
             get {
                 return ResourceManager.GetString("VlOnerNameEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج هاتف المدير التنفيذي لتتم العملية بنجاح ....!.
+        /// </summary>
+        internal static string VlOnerPhone {
+            get {
+                return ResourceManager.GetString("VlOnerPhone", resourceCulture);
             }
         }
         
@@ -1056,6 +1128,15 @@ namespace Domin.Resource {
         internal static string Vlprice {
             get {
                 return ResourceManager.GetString("Vlprice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى ادخال السعر لتتم العملية بنجاح ....!.
+        /// </summary>
+        internal static string VlPricing {
+            get {
+                return ResourceManager.GetString("VlPricing", resourceCulture);
             }
         }
         
@@ -1506,6 +1587,24 @@ namespace Domin.Resource {
         internal static string VLTypEmail {
             get {
                 return ResourceManager.GetString("VLTypEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج حالة الطلب باللغة العربية لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlTypeOrderAr {
+            get {
+                return ResourceManager.GetString("VlTypeOrderAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يرجى أدراج حالة الطلب باللغة الانكليزية لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlTypeOrderEn {
+            get {
+                return ResourceManager.GetString("VlTypeOrderEn", resourceCulture);
             }
         }
         

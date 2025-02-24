@@ -111,6 +111,7 @@ namespace Task_management.Areas.Admin.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Roles(ViewmMODeElMASTER model)
         {
+           
             if (!ModelState.IsValid)
             {
                 //var role = new IdentityRole
@@ -1068,6 +1069,7 @@ namespace Task_management.Areas.Admin.Controllers
             var roles = _roleManager.Roles.ToList();
 
             var model = new ViewmMODeElMASTER
+
             {
                 UserId = user.Id,
                 UserName = user.UserName,
@@ -1077,7 +1079,11 @@ namespace Task_management.Areas.Admin.Controllers
                     Text = r.Name,
                     Selected = userRoles.Contains(r.Name)
                 }).ToList()
+                
             };
+            model.ListCompanyInformation = iCompanyInformation.GetAll().Take(1).ToList();
+            //vmodel.ListVwUser = iUserInformation.GetAll();
+
 
             return View(model);
         }
@@ -1119,6 +1125,9 @@ namespace Task_management.Areas.Admin.Controllers
                     Text = r.Name,
                     Selected = r.Id == model.SelectedRoleId
                 }).ToList();
+
+                model.ListCompanyInformation = iCompanyInformation.GetAll().Take(1).ToList();
+
                 return View("AddEditRolesUser", model);
             }
 
