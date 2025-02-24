@@ -204,6 +204,17 @@ namespace Infarstuructre.Data
 
 
             //*********************************************************
+            //*********************************************************
+
+
+            builder.Entity<TBViewOrderOnline>(entity =>
+            {
+                entity.HasNoKey();
+                entity.ToView("ViewOrderOnline");
+            });
+
+
+            //*********************************************************
             //---------------------------------
             builder.Entity<TBEmailAlartSetting>()
            .Property(b => b.DateTimeEntry)
@@ -650,6 +661,7 @@ namespace Infarstuructre.Data
         public DbSet<TBViewDeliveryCompanyPricing> ViewDeliveryCompanyPricing { get; set; }
         public DbSet<TBTypeOrder> TBTypeOrders { get; set; }
         public DbSet<TBOrderOnline> TBOrderOnlines { get; set; }
+        public DbSet<TBViewOrderOnline> ViewOrderOnline { get; set; }
 
 
     }
