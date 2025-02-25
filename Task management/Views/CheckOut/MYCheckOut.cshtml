@@ -42,7 +42,7 @@
                     <ul>
                         <li>
                             <div class="radio-option">
-                                <input type="radio" name="payment-group-top" id="payment-5" checked="checked" onchange="toggleBillingDetails()">
+                                <input type="radio" name="payment-group-top" id="payment-5" value="Pick up from store" checked="checked" onchange="toggleBillingDetails()">
                                 <label for="payment-5">
                                     Pick up from store<span class="small-text">
                                         Please send a check to Store
@@ -54,7 +54,7 @@
                         </li>
                         <li>
                             <div class="radio-option">
-                                <input type="radio" name="payment-group-top" id="payment-8" onchange="toggleBillingDetails()">
+                                <input type="radio" name="payment-group-top" value="Delivery service" id="payment-8" onchange="toggleBillingDetails()">
                                 <label for="payment-8">
                                     Delivery service<span class="small-text">
                                         Please send a check to Store
@@ -131,6 +131,10 @@
                                     <div class="field-label">Postal Code</div>
                                     <input type="text" name="field-name" value="" placeholder="">
                                 </div>
+                                <div class="form-group col-md-12 col-sm-6 col-xs-12">
+                                    <div class="field-label">Notes</div>
+                                    <input type="text" id="NotesForSave" name="field-name" value="" placeholder="">
+                                </div>
                                 <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="checkbox" name="shipping-option" id="account-option">
                                     <label for="account-option">Create An Account?</label>
@@ -164,6 +168,7 @@
                                         </li>
                                     </ul>
                                     <ul class="total">
+                                        <li>Total Quntity <span id="TotalQuntityFinally" class="count"></span></li>
                                         <li>Sipping <span id="ShippingCost" class="count"></span></li>
                                         <li>Total <span id="totalPriceTotal" class="count"></span></li>
                                         <li hidden>Total 2<span id="totalPriceTotalFix" class="count"></span></li>
@@ -249,7 +254,7 @@
  @section Scripts {
      <script>
 
-                 function openSearch() {
+        function openSearch() {
             document.getElementById("search-overlay").style.display = "block";
         }
 
@@ -266,12 +271,20 @@
         var CartBody = $('#ProductsToBuy');
         var totalPrc = 0;
 
+
         function updateTotalPrice() {
             totalPrc = cart.reduce((sum, p) => sum + (p.quantity * p.price), 0);
+
+            totalQty = cart.reduce((sum, p) => sum + p.quantity, 0);
+
             $('#totalPrice').text(`$${totalPrc.toFixed(2)}`);
             $('#totalPriceTotal').text(`$${totalPrc.toFixed(2)}`);
             $('#totalPriceTotalFix').text(`$${totalPrc.toFixed(2)}`);
+
+            $('#TotalQuntityFinally').text(`${totalQty}`);
         }
+
+
 
         function updateCartItemQuantity(itemId, newQuantity) {
             cart = cart.map(p => {
@@ -453,7 +466,10 @@
             var invoiceNumber = $('#InvoseNum').text();
             var userId = $('#userIIDD').text();
             var userNm = $('#userNNmm').text();
+            var qtyAll $('#TotalQuntityFinally').text();
             var selectedPaymentMethod = $('input[name="payment-group-bottom"]:checked').val();
+            var reciveMethod = $('input[name="payment-group-top"]:checked').val();
+            var notesForSave = $('#NotesForSave').text();
 
             var invoiceHeader = {
                 'idInvoseHeder': 0,
@@ -511,6 +527,18 @@
                                 
                             var orderOnline = {
 
+                                'idOrderOnline': 0,
+                                'idInvose': invoId,
+                                'userId': userId,
+                                'idTypeOrder': ,
+                                'totalQuantity': parseInt(qtyAll),
+                                'totalPrice': parseFloat($('#totalPriceTotal').text().replace('$', '')),
+                                'nouts': notesForSave,
+                                'receivingMethod': ,
+                                'dataEntry': userNm,
+                                'dateTimeEntry': new Date().toISOString(),
+                                'currentState': true,
+
                             }
 
                                 fetch(`${baseUrl}/OrderOnlineAPI`, {
@@ -521,7 +549,7 @@
                                 body: JSON.stringify(orderOnline)
                             })
                                 .then(response => response.json())
-                                .then(data => console.log('تم الإرسال بنجاح:', data))
+                                .then(data => console.log('تم حفظ الاونلاين بنجاح:', data))
                                 .catch(error => console.error('حدث خطأ أثناء الإرسال:', error));
 
                         })
