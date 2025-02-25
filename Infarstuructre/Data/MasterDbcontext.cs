@@ -203,6 +203,17 @@ namespace Infarstuructre.Data
             });
 
 
+            //*********************************************************   
+            //*********************************************************
+
+               
+            builder.Entity<TBViewOrderOnline>(entity =>
+            {
+                entity.HasNoKey();
+                entity.ToView("ViewOrderOnline");
+            });
+
+
             //*********************************************************
             //---------------------------------
             builder.Entity<TBEmailAlartSetting>()
@@ -567,9 +578,17 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("getdate()");
             builder.Entity<TBDeliveryCompanyPricing>()
            .Property(b => b.CurrentState)
-           .HasDefaultValueSql("((1))");   
- 
-       
+           .HasDefaultValueSql("((1))");
+
+
+            //--------------------------------- 
+            //---------------------------------
+            builder.Entity<TBOrderOnline>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBOrderOnline>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
             //--------------------------------- 
         }
         //***********************************
@@ -627,6 +646,8 @@ namespace Infarstuructre.Data
         public DbSet<TBViewArea> ViewArea { get; set; }
         public DbSet<TBDeliveryCompanyPricing> TBDeliveryCompanyPricings { get; set; }
         public DbSet<TBViewDeliveryCompanyPricing> ViewDeliveryCompanyPricing { get; set; }
+        public DbSet<TBViewOrderOnline> ViewOrderOnline { get; set; }
+        public DbSet<TBOrderOnline> TBOrderOnlines { get; set; }
 
 
     }

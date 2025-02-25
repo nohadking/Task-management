@@ -223,6 +223,7 @@ builder.Services.AddScoped<IIDeliveryCompanie, CLSTBDeliveryCompanie>();
 builder.Services.AddScoped<IICitie, CLSTBCitie>();
 builder.Services.AddScoped<IIArea, CLSTBArea>();
 builder.Services.AddScoped<IIDeliveryCompanyPricing, CLSTBDeliveryCompanyPricing>();
+builder.Services.AddScoped<IIOrderOnline, CLSTBOrderOnline>();
 
 
 // تفعيل الترخيص لـ QuestPDF

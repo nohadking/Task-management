@@ -7,6 +7,7 @@
 }
 @{
     var user = await userManager.GetUserAsync(User);
+
     var roles = await userManager.GetRolesAsync(user);
     var userRole = roles.FirstOrDefault();
 }
@@ -70,10 +71,12 @@
             <div class="text-right"><a href="#" class="btn-solid btn">Place Order</a></div>
         </div>
         <div class="checkout-title">
-            <h3>Invose number:@ViewBag.nomberMax</h3>
+            <h3>Invose number: <span id="InvoseNum">@ViewBag.nomberMax</span></h3>
         </div> 
         <div class="checkout-title">
-            <h3>@DateTime.Now</h3>
+            <h3 id="DateNow">@DateTime.Now</h3>
+            <h3 hidden id="userIIDD">@user.Id</h3>
+            <h3 hidden id="userNNmm">@user.Name</h3>
         </div>
         <div class="checkout-page"id="checkout-page">
             <div class="checkout-form">
@@ -171,43 +174,28 @@
                                     <div class="upper-box">
                                         <div class="payment-options">
                                             <ul>
-                                       
 
+                                                @foreach (var pay in Model.ListPaymentMethod)
+                                                {
+                                                    <li>
+                                                        <div class="radio-option">
+                                                            <input type="radio" name="payment-group-bottom" value="@pay.IdPaymentMethod" id="payment-@pay.IdPaymentMethod">
+                                                            <label for="payment-@pay.IdPaymentMethod">
+                                                                @pay.PaymentMethodEn
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                }
 
-                                                <li>
-                                                    <div class="radio-option">
-                                                        <input type="radio" name="payment-group-bottom" id="payment-1" checked="checked">
-                                                        <label for="payment-1">
-                                                            Check Payments<span class="small-text">
-                                                                Please send a check to Store
-                                                                Name, Store Street, Store Town, Store State /
-                                                                County, Store Postcode.
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="radio-option">
-                                                        <input type="radio" name="payment-group-bottom" id="payment-2">
-                                                        <label for="payment-2">
-                                                            Cash On Delivery<span class="small-text">
-                                                                Please send a check to Store
-                                                                Name, Store Street, Store Town, Store State /
-                                                                County, Store Postcode.
-                                                            </span>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li>
                                                     <div class="radio-option paypal">
                                                         <input type="radio" name="payment-group-bottom" id="payment-3">
                                                         <label for="payment-3">PayPal<span class="image"><img src="~/Web/assets/images/paypal.png" alt=""></span></label>
                                                     </div>
-                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="text-right"><a href="#" class="btn-solid btn">Place Order</a></div>
+                                    <div class="text-right"><a onclick="AddOrderToDB()" class="btn-solid btn">Place Order</a></div>
                                 </div>
                             </div>
                         </div>
@@ -458,5 +446,94 @@
                 });
 
         })
+    </script>
+
+    <script>
+        function AddOrderToDB() {
+            var invoiceNumber = $('#InvoseNum').text();
+            var userId = $('#userIIDD').text();
+            var userNm = $('#userNNmm').text();
+            var selectedPaymentMethod = $('input[name="payment-group-bottom"]:checked').val();
+
+            var invoiceHeader = {
+                'idInvoseHeder': 0,
+                'invoiceNumber': parseInt(invoiceNumber),
+                'idPaymentMethod': parseInt(selectedPaymentMethod),
+                'dateInvos': new Date().toISOString(),
+                'idUser': userId,
+                'dataEntry': userNm,
+                'dateTimeEntry': new Date().toISOString(),
+                'outstandingBill': true,
+                'currentState': true,
+            };
+
+            var baseUrl = `${window.location.origin}/api`;
+            fetch(`${baseUrl}/InvoiceHeader`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(invoiceHeader)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Response from save header:', data);
+
+                    var invoId = data.idInvoseHeder;
+                    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+                    var promises = cart.map(p => {
+                        var invoice = {
+                            "idInvose": 0,
+                            "idInvoseHeder": invoId, 
+                            "idProduct": p.id,
+                            "quantity": parseInt(p.quantity),
+                            "price": parseFloat(p.price),
+                            "total": parseFloat(p.price) * parseInt(p.quantity),
+                            "dataEntry": userNm,
+                            "dateTimeEntry": new Date().toISOString(),
+                            "currentState": true
+                        };
+
+                        return fetch(`${baseUrl}/Invoice`, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(invoice)
+                        })
+                            .then(response => response.json());
+                    });
+
+                    Promise.all(promises)
+                        .then(results => {
+                            console.log('تمت إضافة جميع المنتجات بنجاح:', results);
+                                
+                            var orderOnline = {
+
+                            }
+
+                                fetch(`${baseUrl}/OrderOnlineAPI`, {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                },
+                                body: JSON.stringify(orderOnline)
+                            })
+                                .then(response => response.json())
+                                .then(data => console.log('تم الإرسال بنجاح:', data))
+                                .catch(error => console.error('حدث خطأ أثناء الإرسال:', error));
+
+                        })
+                        .catch(error => {
+                            console.error('حدث خطأ أثناء إرسال البيانات:', error);
+                        });
+
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
     </script>
  }
