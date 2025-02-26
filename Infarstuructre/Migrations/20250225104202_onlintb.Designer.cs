@@ -4,6 +4,7 @@ using Infarstuructre.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infarstuructre.Migrations
 {
     [DbContext(typeof(MasterDbcontext))]
-    partial class MasterDbcontextModelSnapshot : ModelSnapshot
+    [Migration("20250225104202_onlintb")]
+    partial class onlintb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -2078,48 +2081,6 @@ namespace Infarstuructre.Migrations
                     b.HasKey("IdSupplier");
 
                     b.ToTable("TBSuppliers");
-                });
-
-            modelBuilder.Entity("Domin.Entity.TBTypeOrder", b =>
-                {
-                    b.Property<int>("IdTypeOrder")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdTypeOrder"));
-
-                    b.Property<bool>("Active")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((1))");
-
-                    b.Property<bool>("CurrentState")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((1))");
-
-                    b.Property<string>("DataEntry")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DateTimeEntry")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("getdate()");
-
-                    b.Property<string>("TypeOrderAr")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.Property<string>("TypeOrderEn")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
-
-                    b.HasKey("IdTypeOrder");
-
-                    b.ToTable("TBTypeOrders");
                 });
 
             modelBuilder.Entity("Domin.Entity.TBUnit", b =>

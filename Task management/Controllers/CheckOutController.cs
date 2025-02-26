@@ -11,7 +11,8 @@ namespace Task_management.Controllers
         IIDeliveryCompanyPricing DeliveryCompanyPricing;
         IIInvoseHeder iInvoseHeder;
         IIPaymentMethod iPaymentMethod;
-        public CheckOutController(ILogger<HomeController> logger, IICompanyInformation iCompanyInformation1, IIHomeBackgroundimage iHomeBackgroundimage1, IIDeliveryCompanyPricing iDeliveryCompanyPricing1, IIInvoseHeder iInvoseHeder1,IIPaymentMethod iPaymentMethod1)
+        private readonly MasterDbcontext dbcontext;
+        public CheckOutController(ILogger<HomeController> logger, IICompanyInformation iCompanyInformation1, IIHomeBackgroundimage iHomeBackgroundimage1, IIDeliveryCompanyPricing iDeliveryCompanyPricing1, IIInvoseHeder iInvoseHeder1, IIPaymentMethod iPaymentMethod1, MasterDbcontext dbcontext)
         {
             _logger = logger;
             iCompanyInformation = iCompanyInformation1;
@@ -19,6 +20,7 @@ namespace Task_management.Controllers
             DeliveryCompanyPricing = iDeliveryCompanyPricing1;
             iInvoseHeder = iInvoseHeder1;
             iPaymentMethod = iPaymentMethod1;
+            this.dbcontext = dbcontext;
         }
         public IActionResult MYCheckOut()
         {
@@ -28,9 +30,11 @@ namespace Task_management.Controllers
             ViewBag.arae = vmodel.ListViewDeliveryCompanyPricing = DeliveryCompanyPricing.GetAll().Distinct().ToList();
             var numberinvose = vmodel.ListViewInvoseHede = iInvoseHeder.GetAll();
             ViewBag.nomberMax = numberinvose.Any()
-        ? numberinvose.Max(c => c.InvoiceNumber) + 1
-        : 1;
-          vmodel.ListPaymentMethod = iPaymentMethod.GetAll();
+                ? numberinvose.Max(c => c.InvoiceNumber) + 1
+                : 1;
+                  vmodel.ListPaymentMethod = iPaymentMethod.GetAll();
+
+            //var orderTypeId = dbcontext.Set<>().Find(1);
             return View(vmodel);
         }
         public IActionResult MYCheckOutAr()
