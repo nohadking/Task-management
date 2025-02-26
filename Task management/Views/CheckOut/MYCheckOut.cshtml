@@ -184,8 +184,8 @@
                                                 {
                                                     <li>
                                                         <div class="radio-option">
-                                                            <input type="radio" name="payment-group-bottom" value="@pay.IdPaymentMethod" id="payment-@pay.IdPaymentMethod">
-                                                            <label for="payment-@pay.IdPaymentMethod">
+                                                            <input type="radio" name="payment-group-bottom" value="@pay.IdPaymentMethod" id="payment1-@pay.IdPaymentMethod">
+                                                            <label for="payment1-@pay.IdPaymentMethod">
                                                                 @pay.PaymentMethodEn
                                                             </label>
                                                         </div>
@@ -546,6 +546,14 @@
                 });
         }
 
+
+
+
+        document.querySelectorAll("input[name='payment1-group-bottom']").forEach(input => {
+            input.addEventListener("change", function () {
+                console.log("تم اختيار طريقة الدفع: " + this.value);
+            });
+        });
 
     </script>
  }

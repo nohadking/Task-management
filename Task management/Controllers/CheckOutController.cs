@@ -32,7 +32,8 @@ namespace Task_management.Controllers
             ViewBag.nomberMax = numberinvose.Any()
                 ? numberinvose.Max(c => c.InvoiceNumber) + 1
                 : 1;
-                  vmodel.ListPaymentMethod = iPaymentMethod.GetAll();
+
+            vmodel.ListPaymentMethod = iPaymentMethod.GetAll();
 
             var orderType = dbcontext.TBTypeOrders.Find(1);
             ViewBag.orderTypeId = orderType.IdTypeOrder;
