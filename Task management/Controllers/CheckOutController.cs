@@ -34,8 +34,10 @@ namespace Task_management.Controllers
                 : 1;
                   vmodel.ListPaymentMethod = iPaymentMethod.GetAll();
 
-            //var orderTypeId = dbcontext.Set<>().Find(1);
-            return View(vmodel);
+            var orderType = dbcontext.TBTypeOrders.Find(1);
+            ViewBag.orderTypeId = orderType.IdTypeOrder;
+
+			return View(vmodel);
         }
         public IActionResult MYCheckOutAr()
         {

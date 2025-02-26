@@ -4,7 +4,13 @@ namespace Infarstuructre.BL
 {
     public interface IIOrderOnline
     {
-
+        List<TBViewOrderOnline> GetAll();
+        TBOrderOnline GetById(int IdOrderOnline);
+        bool saveData(TBOrderOnline savee);
+        bool UpdateData(TBOrderOnline updatss);
+        bool deleteData(int IdOrderOnline);
+        List<TBViewOrderOnline> GetAllv(int IdOrderOnline);
+        TBViewOrderOnline GetByIdview(int IdOrderOnline);
     }
     public class CLSTBOrderOnline: IIOrderOnline
     {

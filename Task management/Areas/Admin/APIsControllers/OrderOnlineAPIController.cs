@@ -8,14 +8,18 @@ namespace Task_management.Areas.Admin.APIsControllers
     public class OrderOnlineAPIController : ControllerBase
     {
         MasterDbcontext dbcontext;
-        public OrderOnlineAPIController(MasterDbcontext dbcontext = null)
+        IIOrderOnline iOrderOnline;
+        public OrderOnlineAPIController(MasterDbcontext dbcontext = null, IIOrderOnline iOrderOnline = null)
         {
             this.dbcontext = dbcontext;
+            this.iOrderOnline = iOrderOnline;
         }
 
-        public IActionResult AddOrderOnline()
+        [HttpPost]
+        public IActionResult AddOrderOnline(TBOrderOnline model)
         {
-            throw new NotImplementedException();
+            var result = iOrderOnline.saveData(model);
+            return Ok(new { result = result });
         }
     }
 }

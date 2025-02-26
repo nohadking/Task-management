@@ -77,6 +77,7 @@
             <h3 id="DateNow">@DateTime.Now</h3>
             <h3 hidden id="userIIDD">@user.Id</h3>
             <h3 hidden id="userNNmm">@user.Name</h3>
+            <h3 hidden id="orderTypeId">@ViewBag.orderTypeId</h3>
         </div>
         <div class="checkout-page"id="checkout-page">
             <div class="checkout-form">
@@ -179,7 +180,6 @@
                                     <div class="upper-box">
                                         <div class="payment-options">
                                             <ul>
-
                                                 @foreach (var pay in Model.ListPaymentMethod)
                                                 {
                                                     <li>
@@ -191,12 +191,6 @@
                                                         </div>
                                                     </li>
                                                 }
-
-                                                    <div class="radio-option paypal">
-                                                        <input type="radio" name="payment-group-bottom" id="payment-3">
-                                                        <label for="payment-3">PayPal<span class="image"><img src="~/Web/assets/images/paypal.png" alt=""></span></label>
-                                                    </div>
-
                                             </ul>
                                         </div>
                                     </div>
@@ -463,45 +457,44 @@
 
     <script>
         function AddOrderToDB() {
-            var invoiceNumber = $('#InvoseNum').text();
-            var userId = $('#userIIDD').text();
-            var userNm = $('#userNNmm').text();
-            var qtyAll $('#TotalQuntityFinally').text();
-            var selectedPaymentMethod = $('input[name="payment-group-bottom"]:checked').val();
-            var reciveMethod = $('input[name="payment-group-top"]:checked').val();
-            var notesForSave = $('#NotesForSave').text();
+            var invoiceNumber = parseInt($('#InvoseNum').text()) || 0;
+            var userId = $('#userIIDD').text().trim();
+            var userNm = $('#userNNmm').text().trim();
+            var qtyAll = parseInt($('#TotalQuntityFinally').text()) || 0;
+            var selectedPaymentMethod = $('input[name="payment-group-bottom"]:checked').val() || 0;
+            var reciveMethod = $('input[name="payment-group-top"]:checked').val() || 0;
+            var notesForSave = $('#NotesForSave').text().trim();
+            var orderTypeId = parseInt($('#orderTypeId').text()) || 0;
 
             var invoiceHeader = {
                 'idInvoseHeder': 0,
-                'invoiceNumber': parseInt(invoiceNumber),
+                'invoiceNumber': invoiceNumber,
                 'idPaymentMethod': parseInt(selectedPaymentMethod),
                 'dateInvos': new Date().toISOString(),
                 'idUser': userId,
                 'dataEntry': userNm,
                 'dateTimeEntry': new Date().toISOString(),
                 'outstandingBill': true,
-                'currentState': true,
+                'currentState': true
             };
 
             var baseUrl = `${window.location.origin}/api`;
+
             fetch(`${baseUrl}/InvoiceHeader`, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(invoiceHeader)
             })
                 .then(response => response.json())
                 .then(data => {
                     console.log('Response from save header:', data);
-
                     var invoId = data.idInvoseHeder;
                     var cart = JSON.parse(localStorage.getItem('cart')) || [];
 
                     var promises = cart.map(p => {
                         var invoice = {
                             "idInvose": 0,
-                            "idInvoseHeder": invoId, 
+                            "idInvoseHeder": invoId,
                             "idProduct": p.id,
                             "quantity": parseInt(p.quantity),
                             "price": parseFloat(p.price),
@@ -513,55 +506,46 @@
 
                         return fetch(`${baseUrl}/Invoice`, {
                             method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
+                            headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify(invoice)
-                        })
-                            .then(response => response.json());
+                        }).then(response => response.json());
                     });
 
-                    Promise.all(promises)
-                        .then(results => {
-                            console.log('تمت إضافة جميع المنتجات بنجاح:', results);
-                                
-                            var orderOnline = {
+                    return Promise.all(promises).then(results => {
+                        console.log('تمت إضافة جميع المنتجات بنجاح:', results);
 
-                                'idOrderOnline': 0,
-                                'idInvose': invoId,
-                                'userId': userId,
-                                'idTypeOrder': ,
-                                'totalQuantity': parseInt(qtyAll),
-                                'totalPrice': parseFloat($('#totalPriceTotal').text().replace('$', '')),
-                                'nouts': notesForSave,
-                                'receivingMethod': ,
-                                'dataEntry': userNm,
-                                'dateTimeEntry': new Date().toISOString(),
-                                'currentState': true,
+                        var orderOnline = {
+                            'idOrderOnline': 0,
+                            'idInvose': invoId,
+                            'userId': userId,
+                            'idTypeOrder': orderTypeId,
+                            'totalQuantity': qtyAll,
+                            'totalPrice': parseFloat($('#totalPriceTotal').text().replace('$', '')) || 0,
+                            'nouts': notesForSave,
+                            'receivingMethod': reciveMethod,
+                            'dataEntry': userNm,
+                            'dateTimeEntry': new Date().toISOString(),
+                            'currentState': true
+                        };
 
-                            }
-
-                                fetch(`${baseUrl}/OrderOnlineAPI`, {
-                                method: 'POST',
-                                headers: {
-                                    'Content-Type': 'application/json'
-                                },
-                                body: JSON.stringify(orderOnline)
-                            })
-                                .then(response => response.json())
-                                .then(data => console.log('تم حفظ الاونلاين بنجاح:', data))
-                                .catch(error => console.error('حدث خطأ أثناء الإرسال:', error));
-
-                        })
-                        .catch(error => {
-                            console.error('حدث خطأ أثناء إرسال البيانات:', error);
+                        return fetch(`${baseUrl}/OrderOnlineAPI`, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(orderOnline)
                         });
-
+                    });
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('تم حفظ الاونلاين بنجاح:', data);
+                    localStorage.setItem('cart', JSON.stringify([]));
+                    console.log('تم إفراغ الكارت بنجاح');
                 })
                 .catch(error => {
-                    console.error('Error:', error);
+                    console.error('حدث خطأ أثناء الإرسال:', error);
                 });
         }
+
 
     </script>
  }

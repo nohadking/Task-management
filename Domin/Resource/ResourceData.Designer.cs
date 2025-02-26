@@ -1591,6 +1591,24 @@ namespace Domin.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to يررجى إدراج نوع الطلب باللغة العربية لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlTypeOrderAr {
+            get {
+                return ResourceManager.GetString("VlTypeOrderAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to يررجى إدراج نوع الطلب باللغة الانكليزية لتتم العملية بنجاح ...!.
+        /// </summary>
+        internal static string VlTypeOrderEn {
+            get {
+                return ResourceManager.GetString("VlTypeOrderEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please include the nickname for the process to complete successfully..!.
         /// </summary>
         internal static string VlTypesCompanies {

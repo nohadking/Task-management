@@ -226,7 +226,7 @@ builder.Services.AddScoped<IIDeliveryCompanyPricing, CLSTBDeliveryCompanyPricing
 builder.Services.AddScoped<IIOrderOnline, CLSTBOrderOnline>();
 
 
-builder.Services.AddScoped<IIOrderOnline, CLSTBOrderOnline>();
+builder.Services.AddScoped<IITypeOrder, CLSTBTypeOrder>();
 
 
 
