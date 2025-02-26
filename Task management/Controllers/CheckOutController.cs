@@ -50,7 +50,7 @@ namespace Task_management.Controllers
             ViewBag.nomberMax = numberinvose.Any()
             ? numberinvose.Max(c => c.InvoiceNumber) + 1
             : 1;
-           vmodel.ListPaymentMethod = iPaymentMethod.GetAll();
+            vmodel.ListPaymentMethod = iPaymentMethod.GetAll();
             return View(vmodel);
         }
     }
