@@ -203,6 +203,17 @@ namespace Infarstuructre.Data
             });
 
 
+            //*********************************************************   
+            //*********************************************************
+
+               
+            builder.Entity<TBViewOrderOnline>(entity =>
+            {
+                entity.HasNoKey();
+                entity.ToView("ViewOrderOnline");
+            });
+
+
             //*********************************************************
             //---------------------------------
             builder.Entity<TBEmailAlartSetting>()
