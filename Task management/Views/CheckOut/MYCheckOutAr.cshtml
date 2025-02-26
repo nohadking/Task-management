@@ -132,6 +132,10 @@
                                     <div class="field-label">Postal Code</div>
                                     <input type="text" name="field-name" value="" placeholder="">
                                 </div>
+                                <div class="form-group col-md-12 col-sm-6 col-xs-12">
+                                    <div class="field-label">Notes</div>
+                                    <input type="text" id="NotesForSave" name="field-name" value="" placeholder="">
+                                </div>
                                 <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <input type="checkbox" name="shipping-option" id="account-option">
                                     <label for="account-option">Create An Account?</label>
@@ -435,7 +439,7 @@
             var userId = $('#userIIDD').text().trim();
             var userNm = $('#userNNmm').text().trim();
             var qtyAll = parseInt($('#TotalQuntityFinally').text()) || 0;
-            var selectedPaymentMethod = $('input[name="payment-group-bottom"]:checked').val() || 0;
+            var selectedPaymentMethod = $('input[name="payment1-group-bottom"]:checked').val() || 0;
             var reciveMethod = $('input[name="payment-group-top"]:checked').val() || 0;
             var notesForSave = $('#NotesForSave').text().trim();
             var orderTypeId = parseInt($('#orderTypeId').text()) || 0;
