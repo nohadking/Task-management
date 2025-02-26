@@ -214,7 +214,8 @@ namespace Infarstuructre.Data
             });
 
 
-            //*********************************************************
+            //*********************************************************   
+
             //---------------------------------
             builder.Entity<TBEmailAlartSetting>()
            .Property(b => b.DateTimeEntry)
@@ -594,6 +595,16 @@ namespace Infarstuructre.Data
            .HasDefaultValueSql("((1))");
 
             //---------------------------------  
+            //---------------------------------
+            builder.Entity<TBOrderOnline>()
+           .Property(b => b.DateTimeEntry)
+           .HasDefaultValueSql("getdate()");
+            builder.Entity<TBOrderOnline>()
+           .Property(b => b.CurrentState)
+           .HasDefaultValueSql("((1))");
+     
+
+            //--------------------------------- 
         }
         //***********************************
         public DbSet<VwUser> VwUsers { get; set; }
@@ -651,6 +662,8 @@ namespace Infarstuructre.Data
         public DbSet<TBDeliveryCompanyPricing> TBDeliveryCompanyPricings { get; set; }
         public DbSet<TBViewDeliveryCompanyPricing> ViewDeliveryCompanyPricing { get; set; }
         public DbSet<TBTypeOrder> TBTypeOrders { get; set; }
+        public DbSet<TBOrderOnline> TBOrderOnlines { get; set; }
+        public DbSet<TBViewOrderOnline> ViewOrderOnline { get; set; }
 
 
     }

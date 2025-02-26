@@ -132,7 +132,9 @@ namespace Infarstuructre.ViewModel
         public List<TBViewArea> ListViewArea { get; set; }
         public TBArea Area { get; set; }    
         public List<TBViewDeliveryCompanyPricing> ListViewDeliveryCompanyPricing { get; set; }
-        public TBDeliveryCompanyPricing DeliveryCompanyPricing { get; set; }
+        public TBDeliveryCompanyPricing DeliveryCompanyPricing { get; set; }     
+        public List<TBTypeOrder> ListTypeOrder { get; set; }
+        public TBTypeOrder TypeOrder { get; set; }
 
 
     }

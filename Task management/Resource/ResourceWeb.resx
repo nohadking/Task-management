@@ -1656,4 +1656,22 @@
   <data name="lbPricing" xml:space="preserve">
     <value>سعر التوصيل</value>
   </data>
+  <data name="LBAddTypeOrder" xml:space="preserve">
+    <value>إضافة وتعديل نوع الطلب </value>
+  </data>
+  <data name="lbTypeOrderAr" xml:space="preserve">
+    <value>نوع الطلب عربي</value>
+  </data>
+  <data name="lbTypeOrderEn" xml:space="preserve">
+    <value>نوع الطلب انكليزي</value>
+  </data>
+  <data name="TBMyTypeOrder" xml:space="preserve">
+    <value>انواع الطلبات </value>
+  </data>
+  <data name="VLTypeOrderArDoplceted" xml:space="preserve">
+    <value>تم إضافة نوع الطلب باللغة العربية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!</value>
+  </data>
+  <data name="VLTypeOrderEnDoplceted" xml:space="preserve">
+    <value>تم إضافة نوع الطلب باللغة الانكليزية مسبقا يرجى التأكد وإعادة المحاولة لاحقا </value>
+  </data>
 </root>

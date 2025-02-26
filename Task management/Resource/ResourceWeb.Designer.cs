@@ -655,6 +655,15 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to إضافة وتعديل نوع الطلب .
+        /// </summary>
+        internal static string LBAddTypeOrder {
+            get {
+                return ResourceManager.GetString("LBAddTypeOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add and modify company categories.
         /// </summary>
         internal static string LBAddTypesCompanies {
@@ -3697,6 +3706,24 @@ namespace Task_management.Resource {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to نوع الطلب عربي.
+        /// </summary>
+        internal static string lbTypeOrderAr {
+            get {
+                return ResourceManager.GetString("lbTypeOrderAr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to نوع الطلب انكليزي.
+        /// </summary>
+        internal static string lbTypeOrderEn {
+            get {
+                return ResourceManager.GetString("lbTypeOrderEn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Category.
         /// </summary>
         internal static string LbTypesCompanies {
@@ -3954,6 +3981,15 @@ namespace Task_management.Resource {
         internal static string ReceiptNo {
             get {
                 return ResourceManager.GetString("ReceiptNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to انواع الطلبات .
+        /// </summary>
+        internal static string TBMyTypeOrder {
+            get {
+                return ResourceManager.GetString("TBMyTypeOrder", resourceCulture);
             }
         }
         
@@ -4602,6 +4638,24 @@ namespace Task_management.Resource {
         internal static string VLTitleShippingoplceted {
             get {
                 return ResourceManager.GetString("VLTitleShippingoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إضافة نوع الطلب باللغة العربية مسبقا يرجى التأكد وإعادة المحاولة لاحقا ...!.
+        /// </summary>
+        internal static string VLTypeOrderArDoplceted {
+            get {
+                return ResourceManager.GetString("VLTypeOrderArDoplceted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to تم إضافة نوع الطلب باللغة الانكليزية مسبقا يرجى التأكد وإعادة المحاولة لاحقا .
+        /// </summary>
+        internal static string VLTypeOrderEnDoplceted {
+            get {
+                return ResourceManager.GetString("VLTypeOrderEnDoplceted", resourceCulture);
             }
         }
         
