@@ -184,7 +184,7 @@
                                                 {
                                                     <li>
                                                         <div class="radio-option">
-                                                            <input type="radio" name="payment-group-bottom" value="@pay.IdPaymentMethod" id="payment1-@pay.IdPaymentMethod">
+                                                            <input type="radio" name="payment1-group-bottom" value="@pay.IdPaymentMethod" id="payment1-@pay.IdPaymentMethod">
                                                             <label for="payment1-@pay.IdPaymentMethod">
                                                                 @pay.PaymentMethodEn
                                                             </label>
@@ -461,7 +461,7 @@
             var userId = $('#userIIDD').text().trim();
             var userNm = $('#userNNmm').text().trim();
             var qtyAll = parseInt($('#TotalQuntityFinally').text()) || 0;
-            var selectedPaymentMethod = $('input[name="payment1-group-bottom"]:checked').val() || 0;
+            var selectedPaymentMethod = parseInt($('input[name="payment1-group-bottom"]:checked').val()) || 0;
             var reciveMethod = $('input[name="payment-group-top"]:checked').val() || 0;
             var notesForSave = $('#NotesForSave').text().trim();
             var orderTypeId = parseInt($('#orderTypeId').text()) || 0;
@@ -516,7 +516,7 @@
 
                         var orderOnline = {
                             'idOrderOnline': 0,
-                            'idInvose': invoId,
+                            'idInvose': invoiceNumber,
                             'userId': userId,
                             'idTypeOrder': orderTypeId,
                             'totalQuantity': qtyAll,
